@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="id">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -23,7 +24,32 @@
             <a href="#portfolio">Portofolio</a>
             <a href="#blog">Blog</a>
         </nav>
-        <a href="#contact" class="btn btn-primary">Mulai Proyek</a>
+        <div class="header-actions">
+            <a href="#contact" class="btn btn-primary nav-cta">Mulai Proyek</a>
+            <button class="hamburger-btn" id="hamburger-btn" aria-label="Menu Navigasi">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <div class="mobile-nav-overlay" id="nav-overlay"></div>
+        <nav class="mobile-nav" id="mobile-nav">
+            <div class="mobile-nav-header">
+                <div class="logo">
+                    <span style="color:var(--text-dark)">Rf</span><span style="color:var(--primary)">.io</span>
+                </div>
+                <button class="close-nav" id="close-nav">&times;</button>
+            </div>
+            <div class="mobile-nav-links">
+                <a href="#" class="m-link">Beranda</a>
+                <a href="#about" class="m-link">Tentang</a>
+                <a href="#services" class="m-link">Layanan</a>
+                <a href="#portfolio" class="m-link">Portofolio</a>
+                <a href="#blog" class="m-link">Blog</a>
+                <a href="#contact" class="btn btn-primary m-cta">Mulai Proyek</a>
+            </div>
+        </nav>
     </header>
 
     <!-- HERO SECTION -->
@@ -31,23 +57,29 @@
         <div class="hero-content">
             <div class="hero-text" data-aos="fade-right">
                 <h1>Halo! Saya Rafi <br><span>Junior Front-End Dev</span></h1>
-                <p>Spesialis antarmuka pengguna (User Interface) yang berfokus menciptakan pengalaman website dan aplikasi seluler yang menawan, modern, serta memiliki konversi tinggi.</p>
+                <p>Spesialis antarmuka pengguna (User Interface) yang berfokus menciptakan pengalaman website dan
+                    aplikasi seluler yang menawan, modern, serta memiliki konversi tinggi.</p>
                 <div class="hero-actions">
                     <a href="#portfolio" class="btn btn-primary">Lihat Proyek</a>
                     <a href="#" class="btn btn-outline">Unduh CV</a>
                 </div>
-                
+
                 <div class="trusted-badge">
                     <div class="avatars">
                         <!-- Placeholder avatar circles -->
-                        <div style="width:35px;height:35px;background:#3b82f6;border-radius:50%;border:2px solid #fff;"></div>
-                        <div style="width:35px;height:35px;background:#fbbf24;border-radius:50%;border:2px solid #fff;margin-left:-10px;"></div>
-                        <div style="width:35px;height:35px;background:#ef4444;border-radius:50%;border:2px solid #fff;margin-left:-10px;"></div>
+                        <div style="width:35px;height:35px;background:#3b82f6;border-radius:50%;border:2px solid #fff;">
+                        </div>
+                        <div
+                            style="width:35px;height:35px;background:#fbbf24;border-radius:50%;border:2px solid #fff;margin-left:-10px;">
+                        </div>
+                        <div
+                            style="width:35px;height:35px;background:#ef4444;border-radius:50%;border:2px solid #fff;margin-left:-10px;">
+                        </div>
                     </div>
                     <div class="trusted-text">Dedikasi penuh untuk hasil visual<br>dan teknis yang maksimal</div>
                 </div>
             </div>
-            
+
             <div class="hero-image" data-aos="zoom-in" data-aos-delay="200">
                 <div class="blob-deco"></div>
                 <div class="image-shape">
@@ -64,17 +96,20 @@
             <div class="highlight-card" data-aos="fade-up" data-aos-delay="100">
                 <div class="hl-icon">🎯</div>
                 <h3>Desain Akurat</h3>
-                <p>Pengembangan antarmuka berprinsip pixel-perfect untuk memastikan visual persis dengan rancangan awal dari Figma.</p>
+                <p>Pengembangan antarmuka berprinsip pixel-perfect untuk memastikan visual persis dengan rancangan awal
+                    dari Figma.</p>
             </div>
             <div class="highlight-card" data-aos="fade-up" data-aos-delay="200">
                 <div class="hl-icon">⚡</div>
                 <h3>Kinerja Optimal</h3>
-                <p>Website yang ringan, cepat dimuat, dengan skor aksesibilitas dan performa yang prima di berbagai perangkat.</p>
+                <p>Website yang ringan, cepat dimuat, dengan skor aksesibilitas dan performa yang prima di berbagai
+                    perangkat.</p>
             </div>
             <div class="highlight-card" data-aos="fade-up" data-aos-delay="300">
                 <div class="hl-icon">📱</div>
                 <h3>Mobile Responsive</h3>
-                <p>Menjamin fungsionalitas dan estetika layout yang beradaptasi dengan mulus pada layar ukuran smartphone hingga desktop.</p>
+                <p>Menjamin fungsionalitas dan estetika layout yang beradaptasi dengan mulus pada layar ukuran
+                    smartphone hingga desktop.</p>
             </div>
         </div>
     </section>
@@ -88,15 +123,17 @@
                 <img src="WhatsApp Image 2025-11-25 at 09.58.58.jpeg" alt="Tentang Saya">
             </div>
         </div>
-        
+
         <div class="about-text" data-aos="fade-left">
             <h4 style="color:var(--secondary);margin-bottom:10px;">Tentang Saya</h4>
             <h2 class="section-title">Solusi Desain Front-End untuk Membuka Potensi Website Anda</h2>
             <p style="color:var(--text-muted); margin-bottom: 20px;">
-                Saya mengeksplorasi bahasa pemrograman untuk mengubah ide desain kompleks menjadi aplikasi interaktif. Dengan jam terbang dalam membangun komponen dinamis dan antarmuka responsif, proyek Anda akan berada di tangan yang tepat.
+                Saya mengeksplorasi bahasa pemrograman untuk mengubah ide desain kompleks menjadi aplikasi interaktif.
+                Dengan jam terbang dalam membangun komponen dinamis dan antarmuka responsif, proyek Anda akan berada di
+                tangan yang tepat.
             </p>
             <a href="#services" class="btn btn-primary" style="margin-bottom:20px;">Berbincang Sekarang ➔</a>
-            
+
             <div class="about-stats">
                 <div class="stat-item">
                     <h4>15+</h4>
@@ -116,42 +153,38 @@
             <div class="text-center" data-aos="fade-up">
                 <h4 style="color:var(--secondary);margin-bottom:10px;">Portofolio</h4>
                 <h2 class="section-title">Lihat Proyek Terbaru Saya</h2>
-                <p class="section-subtitle">Kumpulan beberapa mahakarya yang telah saya rancang, dari dasbor *Smart Home* hingga prototipe fungsional sistem Web & IoT.</p>
+                <p class="section-subtitle">Kumpulan beberapa mahakarya yang telah saya rancang, dari dasbor *Smart
+                    Home* hingga prototipe fungsional sistem Web & IoT.</p>
             </div>
-            
+
             <div class="portfolio-grid">
                 <!-- Gunakan gambar proyek milik user -->
-                <div class="pf-card" data-aos="fade-up" data-aos-delay="100" 
-                     data-title="Simulasi Rangkaian Dasar (ESP32)" 
-                     data-category="Sistem Simulasi IoT" 
-                     data-image="project1.png" 
-                     data-github="https://github.com/username-anda/repo-iot-esp32"
-                     data-demo="https://contoh-demo-iot.com"
-                     data-desc="Proyek ini mensimulasikan lingkungan dasar IoT menggunakan kontroler ESP32, dirancang untuk menunjukkan responsivitas perangkat keras virtual terhadap kontrol antarmuka secara real-time. Bahasa yang digunakan mencakup C++ dan JavaScript untuk integrasi.">
+                <div class="pf-card" data-aos="fade-up" data-aos-delay="100"
+                    data-title="Simulasi Rangkaian Dasar (ESP32)" data-category="Sistem Simulasi IoT"
+                    data-image="project1.png" data-github="https://github.com/username-anda/repo-iot-esp32"
+                    data-demo="https://contoh-demo-iot.com"
+                    data-desc="Proyek ini mensimulasikan lingkungan dasar IoT menggunakan kontroler ESP32, dirancang untuk menunjukkan responsivitas perangkat keras virtual terhadap kontrol antarmuka secara real-time. Bahasa yang digunakan mencakup C++ dan JavaScript untuk integrasi.">
                     <div class="pf-img"><img src="project1.png" alt="Proyek 1"></div>
                     <div class="pf-info">
                         <div class="pf-category">Sistem Simulasi IoT</div>
                         <h3>Simulasi Rangkaian Dasar (ESP32)</h3>
                     </div>
                 </div>
-                
+
                 <div class="pf-card" data-aos="fade-up" data-aos-delay="200"
-                     data-title="Antarmuka Dasbor Smart Home Modern" 
-                     data-category="UI/UX Web App" 
-                     data-image="project2.png" 
-                     data-desc="Dasbor web fungsional yang memungkinkan klien untuk memantau penggunaan energi, mengatur pencahayaan, dan keamanan rumah secara holistik dengan desain bergaya glassmorphism dan tata letak grid.">
+                    data-title="Antarmuka Dasbor Smart Home Modern" data-category="UI/UX Web App"
+                    data-image="project2.png"
+                    data-desc="Dasbor web fungsional yang memungkinkan klien untuk memantau penggunaan energi, mengatur pencahayaan, dan keamanan rumah secara holistik dengan desain bergaya glassmorphism dan tata letak grid.">
                     <div class="pf-img"><img src="project2.png" alt="Proyek 2"></div>
                     <div class="pf-info">
                         <div class="pf-category">UI/UX Web App</div>
                         <h3>Antarmuka Dasbor Smart Home Modern</h3>
                     </div>
                 </div>
-                
-                <div class="pf-card" data-aos="fade-up" data-aos-delay="300"
-                     data-title="Antarmuka Navigasi Monitoring" 
-                     data-category="Kontrol Web" 
-                     data-image="project3.png" 
-                     data-desc="Desain aplikasi antarmuka web khusus untuk pemantauan metrik server lokal. Fokus utama adalah tingkat kebersihan visual, navigasi sidebar yang intuitif, dan responsivitas layout.">
+
+                <div class="pf-card" data-aos="fade-up" data-aos-delay="300" data-title="Antarmuka Navigasi Monitoring"
+                    data-category="Kontrol Web" data-image="project3.png"
+                    data-desc="Desain aplikasi antarmuka web khusus untuk pemantauan metrik server lokal. Fokus utama adalah tingkat kebersihan visual, navigasi sidebar yang intuitif, dan responsivitas layout.">
                     <div class="pf-img"><img src="project3.png" alt="Proyek 3"></div>
                     <div class="pf-info">
                         <div class="pf-category">Kontrol Web</div>
@@ -160,10 +193,9 @@
                 </div>
 
                 <div class="pf-card" data-aos="fade-up" data-aos-delay="400"
-                     data-title="Aplikasi Inventaris Berbasis Cloud" 
-                     data-category="Full-Stack Web" 
-                     data-image="project3.png" 
-                     data-desc="Platform manajemen inventaris komprehensif, cocok untuk bisnis UMKM. Dibangun dengan sistem keranjang dinamis, otentikasi pengamanan ganda, dan panel analitik transaksi bulanan.">
+                    data-title="Aplikasi Inventaris Berbasis Cloud" data-category="Full-Stack Web"
+                    data-image="project3.png"
+                    data-desc="Platform manajemen inventaris komprehensif, cocok untuk bisnis UMKM. Dibangun dengan sistem keranjang dinamis, otentikasi pengamanan ganda, dan panel analitik transaksi bulanan.">
                     <div class="pf-img"><img src="project3.png" alt="Proyek 4"></div>
                     <div class="pf-info">
                         <div class="pf-category">Full-Stack Web</div>
@@ -187,25 +219,29 @@
             <div class="service-box" data-aos="zoom-in" data-aos-delay="100">
                 <div class="sv-icon">💻</div>
                 <h3>Pengembangan Antarmuka Web</h3>
-                <p>Membuat struktur dan gaya visual situs (*HTML, CSS, modern JS*) layaknya sulap yang indah namun tetap optimal dalam setiap baris kodenya.</p>
+                <p>Membuat struktur dan gaya visual situs (*HTML, CSS, modern JS*) layaknya sulap yang indah namun tetap
+                    optimal dalam setiap baris kodenya.</p>
                 <a href="#" class="read-more">Baca Selengkapnya ➔</a>
             </div>
             <div class="service-box" data-aos="zoom-in" data-aos-delay="200">
                 <div class="sv-icon">📱</div>
                 <h3>Desain UI/UX Seluler (Flutter)</h3>
-                <p>Merancang layar aplikasi berkinerja tinggi, fungsionalitas intuitif, untuk perangkat seluler yang menarget kemudahan bertransaksi pelanggan.</p>
+                <p>Merancang layar aplikasi berkinerja tinggi, fungsionalitas intuitif, untuk perangkat seluler yang
+                    menarget kemudahan bertransaksi pelanggan.</p>
                 <a href="#" class="read-more">Baca Selengkapnya ➔</a>
             </div>
             <div class="service-box" data-aos="zoom-in" data-aos-delay="300">
                 <div class="sv-icon">⚙️</div>
                 <h3>Integrasi Front App (API)</h3>
-                <p>Memastikan bahwa data fungsional dari Back-End atau API Cuaca dapat merespon ke desain secara dinamis (*real-time processing*).</p>
+                <p>Memastikan bahwa data fungsional dari Back-End atau API Cuaca dapat merespon ke desain secara dinamis
+                    (*real-time processing*).</p>
                 <a href="#" class="read-more">Baca Selengkapnya ➔</a>
             </div>
             <div class="service-box" data-aos="zoom-in" data-aos-delay="400">
                 <div class="sv-icon">🔤</div>
                 <h3>Tipografi & Design System</h3>
-                <p>Pemilihan warna (*Palette*), penyelarasan *layout grid*, dan hierarki visual agar web tampil dengan sangat estetik tak bersela.</p>
+                <p>Pemilihan warna (*Palette*), penyelarasan *layout grid*, dan hierarki visual agar web tampil dengan
+                    sangat estetik tak bersela.</p>
                 <a href="#" class="read-more">Baca Selengkapnya ➔</a>
             </div>
         </div>
@@ -217,24 +253,33 @@
             <h4 style="color:var(--secondary);margin-bottom:10px;">Kemampuan Saya</h4>
             <h2 class="section-title">Saya Mengembangkan Keahlian Secara Berkala</h2>
             <p style="color:var(--text-muted); margin-bottom: 30px;">
-                Dunia teknologi maju sangat cepat. Berbekal mental peretas dan tekad yang gigih, berikut adalah fondasi persenjataan pemrograman yang rutin saya latih.
+                Dunia teknologi maju sangat cepat. Berbekal mental peretas dan tekad yang gigih, berikut adalah fondasi
+                persenjataan pemrograman yang rutin saya latih.
             </p>
-            
+
             <div class="progress-group">
                 <div class="progress-header"><span>HTML5 / Semantic CSS3</span><span>95%</span></div>
-                <div class="progress-bar"><div class="progress-fill" style="width:95%"></div></div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width:95%"></div>
+                </div>
             </div>
             <div class="progress-group">
                 <div class="progress-header"><span>JavaScript (Vanilla & DOM)</span><span>85%</span></div>
-                <div class="progress-bar"><div class="progress-fill" style="width:85%"></div></div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width:85%"></div>
+                </div>
             </div>
             <div class="progress-group">
                 <div class="progress-header"><span>Dart / Framework Flutter</span><span>70%</span></div>
-                <div class="progress-bar"><div class="progress-fill" style="width:70%"></div></div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width:70%"></div>
+                </div>
             </div>
             <div class="progress-group">
                 <div class="progress-header"><span>Desain Interaktif (AOS, Transition)</span><span>88%</span></div>
-                <div class="progress-bar"><div class="progress-fill" style="width:88%"></div></div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width:88%"></div>
+                </div>
             </div>
         </div>
         <div class="chart-img" data-aos="fade-left">
@@ -283,8 +328,10 @@
                 <h3 id="modalTitle" class="modal-title"></h3>
                 <p id="modalDesc" class="modal-desc"></p>
                 <div class="modal-links">
-                    <a href="#" id="modalDemoBtn" class="btn btn-primary" style="padding: 10px 20px;" target="_blank">Live Demo</a>
-                    <a href="#" id="modalGithubBtn" class="btn btn-outline" style="padding: 10px 20px;" target="_blank">Kode GitHub</a>
+                    <a href="#" id="modalDemoBtn" class="btn btn-primary" style="padding: 10px 20px;"
+                        target="_blank">Live Demo</a>
+                    <a href="#" id="modalGithubBtn" class="btn btn-outline" style="padding: 10px 20px;"
+                        target="_blank">Kode GitHub</a>
                 </div>
             </div>
         </div>
@@ -295,14 +342,16 @@
         <div class="container footer-grid">
             <div>
                 <a href="#" class="footer-logo">Rf<span style="color:var(--primary)">.io</span></a>
-                <p style="margin-bottom:20px; font-size:14px; opacity:0.8;">Pusat pembuatan solusi Front-End dan rancangan visual terbaik yang memadukan keindahan, kemudahan akses, dan konversi target fungsionalitas murni.</p>
+                <p style="margin-bottom:20px; font-size:14px; opacity:0.8;">Pusat pembuatan solusi Front-End dan
+                    rancangan visual terbaik yang memadukan keindahan, kemudahan akses, dan konversi target
+                    fungsionalitas murni.</p>
                 <div style="display:flex;gap:15px; font-weight:bold;">
                     <a href="#" style="color:var(--primary)">LD</a>
                     <a href="#" style="color:var(--secondary)">GH</a>
                     <a href="#" style="color:var(--light-accent)">IG</a>
                 </div>
             </div>
-            
+
             <div>
                 <h4>Navigasi</h4>
                 <ul class="footer-links">
@@ -312,7 +361,7 @@
                     <li><a href="#portfolio">Portofolio</a></li>
                 </ul>
             </div>
-            
+
             <div>
                 <h4>Bantuan</h4>
                 <ul class="footer-links">
@@ -321,7 +370,7 @@
                     <li><a href="#">Privasi Pengguna</a></li>
                 </ul>
             </div>
-            
+
             <div>
                 <h4>Kontak Langsung</h4>
                 <ul class="footer-links" style="opacity:0.8;">
@@ -331,9 +380,10 @@
                 </ul>
             </div>
         </div>
-        
+
         <div class="container copyright">
-            &copy; <span id="year"></span> Rafi Front-End Developer. Semua Hak Dilindungi. Didesain dengan penuh semangat.
+            &copy; <span id="year"></span> Rafi Front-End Developer. Semua Hak Dilindungi. Didesain dengan penuh
+            semangat.
         </div>
     </footer>
 
@@ -353,18 +403,18 @@
         // Logika Modal Proyek
         const modal = document.getElementById('projectModal');
         const cards = document.querySelectorAll('.pf-card');
-        
+
         cards.forEach(card => {
             card.addEventListener('click', () => {
                 document.getElementById('modalTitle').innerText = card.getAttribute('data-title');
                 document.getElementById('modalCategory').innerText = card.getAttribute('data-category');
                 document.getElementById('modalImg').src = card.getAttribute('data-image');
                 document.getElementById('modalDesc').innerText = card.getAttribute('data-desc');
-                
+
                 // Ambil link dari atribut
                 const githubLink = card.getAttribute('data-github');
                 const demoLink = card.getAttribute('data-demo');
-                
+
                 const btnGithub = document.getElementById('modalGithubBtn');
                 const btnDemo = document.getElementById('modalDemoBtn');
 
@@ -382,7 +432,7 @@
                 } else {
                     btnDemo.style.display = 'none';
                 }
-                
+
                 modal.classList.add('active');
             });
         });
@@ -393,10 +443,36 @@
 
         // Tutup modal jika klik background gelapnya (overlay)
         modal.addEventListener('click', (e) => {
-            if(e.target === modal) {
+            if (e.target === modal) {
                 closeModal();
             }
         });
+        // Logika Mobile Menu
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const closeNavBtn = document.getElementById('close-nav');
+        const mobileNav = document.getElementById('mobile-nav');
+        const navOverlay = document.getElementById('nav-overlay');
+        const mLinks = document.querySelectorAll('.m-link, .m-cta');
+
+        function toggleMobileMenu() {
+            mobileNav.classList.toggle('active');
+            navOverlay.classList.toggle('active');
+            hamburgerBtn.classList.toggle('active');
+            document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+        }
+
+        hamburgerBtn.addEventListener('click', toggleMobileMenu);
+        closeNavBtn.addEventListener('click', toggleMobileMenu);
+        navOverlay.addEventListener('click', toggleMobileMenu);
+
+        mLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (mobileNav.classList.contains('active')) {
+                    toggleMobileMenu();
+                }
+            });
+        });
     </script>
 </body>
+
 </html>
