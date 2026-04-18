@@ -832,6 +832,187 @@ i,
 }
 
 
+/* CERTIFICATES ENVELOPE */
+.certs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+    justify-items: center;
+}
+
+.cert-item {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    perspective: 1500px;
+}
+
+.cert-envelope-container {
+    position: relative;
+    width: 280px;
+    height: 180px;
+    background: var(--primary-hover);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    box-shadow: var(--shadow-sm);
+    transition: 0.3s;
+}
+
+.cert-item:hover .cert-envelope-container {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.cert-envelope-front {
+    position: absolute;
+    bottom: 0; left: 0; width: 100%; height: 100%;
+    background: var(--primary);
+    clip-path: polygon(0 0, 50% 50%, 100% 0, 100% 100%, 0 100%);
+    border-radius: 0 0 8px 8px;
+    z-index: 3;
+}
+
+.cert-envelope-front::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.05);
+}
+
+.cert-envelope-flap {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: var(--primary);
+    clip-path: polygon(0 0, 100% 0, 50% 60%);
+    transform-origin: top;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), z-index 0s 0.3s;
+    z-index: 4;
+}
+
+.cert-item:hover .cert-envelope-flap {
+    transform: rotateX(180deg);
+    z-index: 1; /* Moves behind the letter once open */
+}
+
+.cert-envelope-letter {
+    position: absolute;
+    bottom: 5px;
+    width: 90%;
+    height: 90%;
+    background: white;
+    z-index: 2;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+}
+
+.cert-envelope-letter img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.cert-item:hover .cert-envelope-letter {
+    transform: translateY(-60px);
+}
+
+.cert-title {
+    margin-top: 1.5rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-align: center;
+    transition: color 0.3s;
+}
+
+.cert-item:hover .cert-title {
+    color: var(--primary);
+}
+
+/* Dark Mode Overrides for Envelope */
+[data-theme="dark"] .cert-envelope-container {
+    background: rgba(0, 242, 255, 0.15); 
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.05); /* Glow effect */
+}
+
+[data-theme="dark"] .cert-envelope-front {
+    background: #0a0f1e; 
+}
+[data-theme="dark"] .cert-envelope-front::before {
+    background: rgba(0, 242, 255, 0.08);
+}
+
+[data-theme="dark"] .cert-envelope-flap {
+    background: #0a0f1e; 
+}
+[data-theme="dark"] .cert-envelope-flap::after {
+    content: ''; position: absolute; inset: 0;
+    background: rgba(0, 242, 255, 0.12); 
+}
+
+[data-theme="dark"] .cert-envelope-letter {
+    background: #050811;
+    border-color: rgba(0, 242, 255, 0.3);
+}
+
+/* Certificate Modal Specific Styles */
+.cert-modal-content {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    width: 100%;
+    position: relative;
+    padding: 2rem;
+}
+
+.cert-modal-img {
+    max-height: 85vh;
+    max-width: 100%;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    object-fit: contain;
+}
+
+[data-theme="dark"] .cert-modal-img {
+    box-shadow: 0 0 40px rgba(0, 242, 255, 0.3);
+}
+
+.cert-modal-close {
+    position: absolute;
+    top: -1rem;
+    right: 0rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    border: none;
+    z-index: 10;
+    box-shadow: var(--shadow-sm);
+    color: var(--text-dark);
+}
+
+[data-theme="dark"] .cert-modal-close {
+    background: #0a0f1e;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+
 /* TESTIMONIALS */
 .testi-grid {
     display: grid;
