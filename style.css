@@ -68,6 +68,7 @@ body {
     font-size: var(--f-body);
     overflow-x: hidden;
     width: 100%;
+    padding-top: 76px;
 }
 
 a {
@@ -117,8 +118,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5%;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
     z-index: 1000;
     background: var(--header-bg);
     backdrop-filter: blur(10px);
@@ -301,6 +304,10 @@ header {
     box-shadow: 0 12px 25px rgba(79, 70, 229, 0.4);
 }
 
+[data-theme="dark"] .btn-primary {
+    color: #000000;
+}
+
 .btn-outline {
     border: 2px solid var(--border-color);
     color: var(--text-dark);
@@ -310,6 +317,16 @@ header {
 .btn-outline:hover {
     border-color: var(--primary);
     color: var(--primary);
+}
+
+.btn-footer-email {
+    background: white;
+    color: var(--primary);
+    font-weight: 800;
+}
+
+[data-theme="dark"] .btn-footer-email {
+    color: #000000;
 }
 
 /* THEME TOGGLE */
@@ -871,7 +888,10 @@ i,
 
 .cert-envelope-front {
     position: absolute;
-    bottom: 0; left: 0; width: 100%; height: 100%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: var(--primary);
     clip-path: polygon(0 0, 50% 50%, 100% 0, 100% 100%, 0 100%);
     border-radius: 0 0 8px 8px;
@@ -882,12 +902,15 @@ i,
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.05);
+    background: rgba(0, 0, 0, 0.05);
 }
 
 .cert-envelope-flap {
     position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: var(--primary);
     clip-path: polygon(0 0, 100% 0, 50% 60%);
     transform-origin: top;
@@ -897,7 +920,8 @@ i,
 
 .cert-item:hover .cert-envelope-flap {
     transform: rotateX(180deg);
-    z-index: 1; /* Moves behind the letter once open */
+    z-index: 1;
+    /* Moves behind the letter once open */
 }
 
 .cert-envelope-letter {
@@ -909,7 +933,7 @@ i,
     z-index: 2;
     transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     padding: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     border: 1px solid var(--border-color);
 }
@@ -939,23 +963,28 @@ i,
 
 /* Dark Mode Overrides for Envelope */
 [data-theme="dark"] .cert-envelope-container {
-    background: rgba(0, 242, 255, 0.15); 
-    box-shadow: 0 0 20px rgba(0, 242, 255, 0.05); /* Glow effect */
+    background: rgba(0, 242, 255, 0.15);
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.05);
+    /* Glow effect */
 }
 
 [data-theme="dark"] .cert-envelope-front {
-    background: #0a0f1e; 
+    background: #0a0f1e;
 }
+
 [data-theme="dark"] .cert-envelope-front::before {
     background: rgba(0, 242, 255, 0.08);
 }
 
 [data-theme="dark"] .cert-envelope-flap {
-    background: #0a0f1e; 
+    background: #0a0f1e;
 }
+
 [data-theme="dark"] .cert-envelope-flap::after {
-    content: ''; position: absolute; inset: 0;
-    background: rgba(0, 242, 255, 0.12); 
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 242, 255, 0.12);
 }
 
 [data-theme="dark"] .cert-envelope-letter {
