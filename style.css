@@ -814,7 +814,8 @@ i,
     margin-bottom: 0.5rem;
 }
 
-[data-theme="dark"] .skill-icon img {
+[data-theme="dark"] .skill-icon img,
+[data-theme="dark"] .skill-icon i {
     filter: drop-shadow(0 0 8px var(--primary));
 }
 
