@@ -13,8 +13,37 @@
 </head>
 
 <body>
+    <!-- FULLSCREEN LOADING SCREEN -->
+    <div id="loader-wrapper" role="status" aria-label="Loading portfolio">
+        <canvas id="loader-canvas"></canvas>
+        <div class="loader-bg-orbs">
+            <div class="loader-orb orb1"></div>
+            <div class="loader-orb orb2"></div>
+            <div class="loader-orb orb3"></div>
+        </div>
+        <div class="loader-content">
+            <div class="orbital-rings">
+                <div class="ring ring-outer"></div>
+                <div class="ring ring-middle"></div>
+                <div class="ring ring-inner"></div>
+                <div class="center-logo">
+                    <span class="rf">RF</span><span class="io">.io</span>
+                </div>
+            </div>
+            <div class="loader-tagline">JUNIOR FRONT-END DEV</div>
+            <div class="progress-wrap">
+                <div class="progress-bar" id="loader-progress"></div>
+            </div>
+            <div class="pulsing-dots">
+                <div class="dot dot1"></div>
+                <div class="dot dot2"></div>
+                <div class="dot dot3"></div>
+            </div>
+        </div>
+    </div>
 
-    <header>
+    <!-- MAIN WRAPPER START -->
+    <div id="main-content-wrapper">    <header>
         <div class="logo">
             <span style="color:var(--text-dark)">RF</span><span style="color:var(--primary)">.io</span>
         </div>
@@ -647,6 +676,89 @@
                 });
             }
         </script>
-</body>
+        <!-- Loader Script -->
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const mainWrapper = document.getElementById('main-content-wrapper');
+                mainWrapper.style.opacity = '0';
+                mainWrapper.style.transition = 'opacity 0.6s ease';
+                document.body.style.overflow = 'hidden';
+                window.scrollTo(0, 0);
+                
+                const canvas = document.getElementById('loader-canvas');
+                const ctx = canvas.getContext('2d');
+                let width, height;
+                let particles = [];
+                
+                function resize() {
+                    width = window.innerWidth;
+                    height = window.innerHeight;
+                    canvas.width = width;
+                    canvas.height = height;
+                }
+                
+                window.addEventListener('resize', resize);
+                resize();
+                
+                class Particle {
+                    constructor() {
+                        this.reset();
+                        this.y = Math.random() * height; 
+                    }
+                    reset() {
+                        this.x = Math.random() * width;
+                        this.y = height + 10;
+                        this.size = 1;
+                        this.speed = Math.random() * 0.5 + 0.3;
+                        this.opacity = 0.15;
+                    }
+                    update() {
+                        this.y -= this.speed;
+                        if (this.y < -10) this.reset();
+                    }
+                    draw() {
+                        ctx.fillStyle = `rgba(91, 75, 219, ${this.opacity})`;
+                        ctx.beginPath();
+                        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                        ctx.fill();
+                    }
+                }
+                
+                for (let i = 0; i < 20; i++) {
+                    particles.push(new Particle());
+                }
+                
+                let animFrame;
+                function animate() {
+                    ctx.clearRect(0, 0, width, height);
+                    particles.forEach(p => {
+                        p.update();
+                        p.draw();
+                    });
+                    animFrame = requestAnimationFrame(animate);
+                }
+                animate();
 
-</html>
+                const loaderWrapper= document.getElementById('loader-wrapper');
+                const loaderContent= document.querySelector('.loader-content');
+                
+                setTimeout(() => {
+                    loaderContent.style.transform = 'scale(0.95)';
+                    loaderContent.style.opacity = '0';
+                    loaderWrapper.style.backgroundColor = '#FFFFFF';
+                    
+                    setTimeout(() => {
+                        loaderWrapper.style.opacity = '0';
+                        mainWrapper.style.opacity = '1';
+                        document.body.style.overflow = '';
+                        
+                        setTimeout(() => {
+                            loaderWrapper.style.display = 'none';
+                            cancelAnimationFrame(animFrame);
+                        }, 400);
+                    }, 400);
+                }, 3100);
+            });
+        </script>
+    </div> <!-- MAIN WRAPPER END -->
+</body></html>
