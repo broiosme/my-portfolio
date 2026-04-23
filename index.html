@@ -43,482 +43,509 @@
     </div>
 
     <!-- MAIN WRAPPER START -->
-    <div id="main-content-wrapper">    <header>
-        <div class="logo">
-            <span style="color:var(--text-dark)">RF</span><span style="color:var(--primary)">.io</span>
-        </div>
-        <nav class="desktop-nav">
-            <a href="#">Beranda</a>
-            <a href="#about">Tentang</a>
-            <a href="#services">Layanan</a>
-            <a href="#portfolio">Portofolio</a>
-            <a href="#blog">Blog</a>
-        </nav>
-        <div class="header-actions">
-            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
-                <svg class="sun-icon" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
-                    fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="5"></circle>
-                    <line x1="12" y1="1" x2="12" y2="3"></line>
-                    <line x1="12" y1="21" x2="12" y2="23"></line>
-                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                    <line x1="1" y1="12" x2="3" y2="12"></line>
-                    <line x1="21" y1="12" x2="23" y2="12"></line>
-                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                </svg>
-                <svg class="moon-icon" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
-                    fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                </svg>
-            </button>
-            <a href="#contact" class="btn btn-primary nav-cta">Mulai Proyek</a>
-            <button class="hamburger-btn" id="hamburger-btn" aria-label="Menu Navigasi">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-
-        <div class="mobile-nav-overlay" id="nav-overlay"></div>
-        <nav class="mobile-nav" id="mobile-nav">
-            <div class="mobile-nav-header">
-                <div class="logo">
-                    <span style="color:var(--text-dark)">Rf</span><span style="color:var(--primary)">.io</span>
-                </div>
-                <button class="close-nav" id="close-nav">&times;</button>
+    <div id="main-content-wrapper">
+        <header>
+            <div class="logo">
+                <span style="color:var(--text-dark)">RF</span><span style="color:var(--primary)">.io</span>
             </div>
-            <div class="mobile-nav-links">
-                <a href="#" class="m-link">Beranda</a>
-                <a href="#about" class="m-link">Tentang</a>
-                <a href="#services" class="m-link">Layanan</a>
-                <a href="#portfolio" class="m-link">Portofolio</a>
-                <a href="#blog" class="m-link">Blog</a>
-                <a href="#contact" class="btn btn-primary m-cta">Mulai Proyek</a>
+            <nav class="desktop-nav">
+                <a href="#">Beranda</a>
+                <a href="#about">Tentang</a>
+                <a href="#services">Layanan</a>
+                <a href="#portfolio">Portofolio</a>
+                <a href="#blog">Blog</a>
+            </nav>
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor"
+                        stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor"
+                        stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <a href="#contact" class="btn btn-primary nav-cta">Mulai Proyek</a>
+                <button class="hamburger-btn" id="hamburger-btn" aria-label="Menu Navigasi">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-        </nav>
-    </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero container">
-        <div class="hero-content">
-            <div class="hero-text" data-aos="fade-right">
-                <h1>Halo! Saya Rafi <br><span>Junior Front-End Dev</span></h1>
-                <p>Spesialis antarmuka pengguna (User Interface) yang berfokus menciptakan pengalaman website dan
-                    aplikasi seluler yang menawan, modern, serta memiliki konversi tinggi.</p>
-                <div class="hero-actions">
-                    <a href="#portfolio" class="btn btn-primary">Lihat Proyek</a>
-                    <a href="#services" class="btn btn-outline">Layanan Saya</a>
+            <div class="mobile-nav-overlay" id="nav-overlay"></div>
+            <nav class="mobile-nav" id="mobile-nav">
+                <div class="mobile-nav-header">
+                    <div class="logo">
+                        <span style="color:var(--text-dark)">Rf</span><span style="color:var(--primary)">.io</span>
+                    </div>
+                    <button class="close-nav" id="close-nav">&times;</button>
+                </div>
+                <div class="mobile-nav-links">
+                    <a href="#" class="m-link">Beranda</a>
+                    <a href="#about" class="m-link">Tentang</a>
+                    <a href="#services" class="m-link">Layanan</a>
+                    <a href="#portfolio" class="m-link">Portofolio</a>
+                    <a href="#blog" class="m-link">Blog</a>
+                    <a href="#contact" class="btn btn-primary m-cta">Mulai Proyek</a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- HERO SECTION -->
+        <section class="hero container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-right">
+                    <h1>Halo! Saya Rafi <br><span>Junior Front-End Dev</span></h1>
+                    <p>Spesialis antarmuka pengguna (User Interface) yang berfokus menciptakan pengalaman website dan
+                        aplikasi seluler yang menawan, modern, serta memiliki konversi tinggi.</p>
+                    <div class="hero-actions">
+                        <a href="#portfolio" class="btn btn-primary">Lihat Proyek</a>
+                        <a href="cv.html" class="btn btn-outline">Lihat CV</a>
+                    </div>
+
+                    <div class="trusted-badge">
+                        <div class="avatars">
+                            <!-- Placeholder avatar circles -->
+                            <div
+                                style="width:35px;height:35px;background:#3b82f6;border-radius:50%;border:2px solid #fff;">
+                            </div>
+                            <div
+                                style="width:35px;height:35px;background:#fbbf24;border-radius:50%;border:2px solid #fff;margin-left:-10px;">
+                            </div>
+                            <div
+                                style="width:35px;height:35px;background:#ef4444;border-radius:50%;border:2px solid #fff;margin-left:-10px;">
+                            </div>
+                        </div>
+                        <div class="trusted-text">Dedikasi penuh untuk hasil visual<br>dan teknis yang maksimal</div>
+                    </div>
                 </div>
 
-                <div class="trusted-badge">
-                    <div class="avatars">
-                        <!-- Placeholder avatar circles -->
-                        <div style="width:35px;height:35px;background:#3b82f6;border-radius:50%;border:2px solid #fff;">
-                        </div>
-                        <div
-                            style="width:35px;height:35px;background:#fbbf24;border-radius:50%;border:2px solid #fff;margin-left:-10px;">
-                        </div>
-                        <div
-                            style="width:35px;height:35px;background:#ef4444;border-radius:50%;border:2px solid #fff;margin-left:-10px;">
+                <div class="hero-image" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="blob-deco"></div>
+                    <div class="image-shape">
+                        <!-- Tetap memakai foto profil buatan user -->
+                        <img src="img/WhatsApp Image 2025-11-25 at 09.58.58.jpeg" alt="Rafi Foto Utama">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HIGHLIGHTS / TARGET -->
+        <section class="container" style="position:relative">
+            <div class="highlights">
+                <div class="highlight-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="hl-icon">🎯</div>
+                    <h3>Desain Akurat</h3>
+                    <p>Pengembangan antarmuka berprinsip pixel-perfect untuk memastikan visual persis dengan rancangan
+                        awal
+                        dari Figma.</p>
+                </div>
+                <div class="highlight-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="hl-icon">⚡</div>
+                    <h3>Kinerja Optimal</h3>
+                    <p>Website yang ringan, cepat dimuat, dengan skor aksesibilitas dan performa yang prima di berbagai
+                        perangkat.</p>
+                </div>
+                <div class="highlight-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="hl-icon">📱</div>
+                    <h3>Mobile Responsive</h3>
+                    <p>Menjamin fungsionalitas dan estetika layout yang beradaptasi dengan mulus pada layar ukuran
+                        smartphone hingga desktop.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about container">
+            <div class="about-image" data-aos="fade-right">
+                <div class="about-blob"></div>
+                <div class="about-shape">
+                    <!-- Foto cadangan jika user punya -->
+                    <img src="img/WhatsApp Image 2025-11-25 at 09.58.58.jpeg" alt="Tentang Saya">
+                </div>
+            </div>
+
+            <div class="about-text" data-aos="fade-left">
+                <h4 style="color:var(--secondary);margin-bottom:10px;">Tentang Saya</h4>
+                <h2 class="section-title">Solusi Desain Front-End untuk Membuka Potensi Website Anda</h2>
+                <p style="color:var(--text-muted); margin-bottom: 20px;">
+                    Saya mengeksplorasi bahasa pemrograman untuk mengubah ide desain kompleks menjadi aplikasi
+                    interaktif.
+                    Dengan jam terbang dalam membangun komponen dinamis dan antarmuka responsif, proyek Anda akan berada
+                    di
+                    tangan yang tepat.
+                </p>
+                <a href="#services" class="btn btn-primary" style="margin-bottom:20px;">Berbincang Sekarang ➔</a>
+
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h4>15+</h4>
+                        <p>Proyek Kompleks Selesai</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>100%</h4>
+                        <p>Dedikasi Antarmuka Web</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO SECTION -->
+        <section id="portfolio" class="section-padding" style="background:var(--bg-main)">
+            <div class="container">
+                <div class="text-center" data-aos="fade-up">
+                    <h4 style="color:var(--secondary);margin-bottom:10px;">Portofolio</h4>
+                    <h2 class="section-title">Lihat Proyek Terbaru Saya</h2>
+                    <p class="section-subtitle">Kumpulan beberapa mahakarya yang telah saya rancang, dari dasbor *Smart
+                        Home* hingga prototipe fungsional sistem Web & IoT.</p>
+                </div>
+
+                <div class="portfolio-grid">
+                    <!-- Gunakan gambar proyek milik user -->
+                    <div class="pf-card" data-aos="fade-up" data-aos-delay="100"
+                        data-title="Simulasi Rangkaian Dasar (ESP32)" data-category="Sistem Simulasi IoT"
+                        data-image="img/project1.png"
+                        data-desc="Proyek ini mensimulasikan lingkungan dasar IoT menggunakan kontroler ESP32, dirancang untuk menunjukkan responsivitas perangkat keras virtual terhadap kontrol antarmuka secara real-time. Bahasa yang digunakan mencakup C++ dan JavaScript untuk integrasi.">
+                        <div class="pf-img"><img src="img/project1.png" alt="Proyek 1"></div>
+                        <div class="pf-info">
+                            <div class="pf-category">Sistem Simulasi IoT</div>
+                            <h3>Simulasi Rangkaian Dasar (ESP32)</h3>
                         </div>
                     </div>
-                    <div class="trusted-text">Dedikasi penuh untuk hasil visual<br>dan teknis yang maksimal</div>
+
+                    <div class="pf-card" data-aos="fade-up" data-aos-delay="200"
+                        data-title="Antarmuka Dasbor Smart Home Modern" data-category="UI/UX Web App"
+                        data-image="img/project2.png"
+                        data-desc="Dasbor web fungsional yang memungkinkan klien untuk memantau penggunaan energi, mengatur pencahayaan, dan keamanan rumah secara holistik dengan desain bergaya glassmorphism dan tata letak grid.">
+                        <div class="pf-img"><img src="img/project2.png" alt="Proyek 2"></div>
+                        <div class="pf-info">
+                            <div class="pf-category">UI/UX Web App</div>
+                            <h3>Antarmuka Dasbor Smart Home Modern</h3>
+                        </div>
+                    </div>
+
+                    <div class="pf-card" data-aos="fade-up" data-aos-delay="300"
+                        data-title="Landing Page Restoran Nusantara" data-category="UI/UX Web Design"
+                        data-image="img/website_satu.png"
+                        data-desc="Desain antarmuka landing page premium untuk restoran Shaqueena yang menyajikan masakan khas Nusantara. Mengusung visual elegan, navigasi menu (Sate, Bakso, Soto) yang tertata rapi, dan tombol panggil tindakan (Call to Action) yang menarik perhatian pelanggan.">
+                        <div class="pf-img"><img src="img/website_satu.png" alt="Restoran Shaqueena"></div>
+                        <div class="pf-info">
+                            <div class="pf-category">UI/UX Web Design</div>
+                            <h3>Landing Page Restoran Nusantara</h3>
+                        </div>
+                    </div>
+
+                    <div class="pf-card" data-aos="fade-up" data-aos-delay="400"
+                        data-title="Website Pameran Mobil Premium" data-category="Automotive Website"
+                        data-image="img/website_dua.png"
+                        data-desc="Platform dealer mobil Velocity Motors. Menggunakan tampilan mode gelap premium dengan tata letak minimalis dan eksklusif untuk menonjolkan kendaraan bergaya supercar. Dilengkapi dengan fasilitas ulasan video dan sistem pemesanan Test Drive.">
+                        <div class="pf-img"><img src="img/website_dua.png" alt="Velocity Motors"></div>
+                        <div class="pf-info">
+                            <div class="pf-category">Automotive Website</div>
+                            <h3>Website Pameran Mobil Premium</h3>
+                        </div>
+                    </div>
+
+                    <div class="pf-card" data-aos="fade-up" data-aos-delay="500"
+                        data-title="Sistem Layanan Pengaduan Sekolah" data-category="Sistem Informasi Publik"
+                        data-image="img/website_tiga.png"
+                        data-desc="Sistem Pengaduan dan Aspirasi untuk SMKN 1 Bondowoso. Dirancang dengan elemen antarmuka yang bersih (clean UI), lengkap dengan ilustrasi modern. Sistem ini memudahkan partisipasi aktif siswa maupun masyarakat untuk menyampaikan laporan secara transparan.">
+                        <div class="pf-img"><img src="img/website_tiga.png" alt="Pengaduan SMKN 1 Bondowoso"></div>
+                        <div class="pf-info">
+                            <div class="pf-category">Sistem Informasi Publik</div>
+                            <h3>Sistem Pengaduan SMKN 1 Bondowoso</h3>
+                        </div>
+                    </div>
+
+                    <div class="pf-card" data-aos="fade-up" data-aos-delay="600"
+                        data-title="Aplikasi Pemesanan Makanan Sehat" data-category="Food Delivery Platform"
+                        data-image="img/website_empat.png"
+                        data-desc="Desain aplikasi web pengiriman makanan segar premium. Mengoptimalkan palet warna cerah namun menenangkan demi menyorot sajian makanan bergizi. Memiliki navigasi kategori yang gampang diakses serta menu cari berfitur lengkap (lengkap dengan penanda popularitas & waktu pengantaran).">
+                        <div class="pf-img"><img src="img/website_empat.png" alt="Food Delivery"></div>
+                        <div class="pf-info">
+                            <div class="pf-category">Food Delivery Platform</div>
+                            <h3>Aplikasi Pemesanan Makanan Sehat</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="https://github.com" class="btn btn-outline" target="_blank">Lihat Semua Proyek ➔</a>
                 </div>
             </div>
+        </section>
 
-            <div class="hero-image" data-aos="zoom-in" data-aos-delay="200">
-                <div class="blob-deco"></div>
-                <div class="image-shape">
-                    <!-- Tetap memakai foto profil buatan user -->
-                    <img src="img/WhatsApp Image 2025-11-25 at 09.58.58.jpeg" alt="Rafi Foto Utama">
+        <!-- SERVICES -->
+        <section id="services" class="services-section section-padding">
+            <div class="container text-center" data-aos="fade-up">
+                <h4 style="color:var(--secondary);margin-bottom:10px;">Layanan Inti</h4>
+                <h2 class="section-title">Apa Yang Saya Lakukan Untuk Mengembangkan Usaha Anda</h2>
+            </div>
+            <div class="container services-grid" style="margin-top:40px;">
+                <div class="service-box" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="sv-icon">💻</div>
+                    <h3>Pengembangan Antarmuka Web</h3>
+                    <p>Membuat struktur dan gaya visual situs (HTML, CSS, modern JS) layaknya sulap yang indah namun
+                        tetap
+                        optimal dalam setiap baris kodenya.</p>
+                    <a href="#" class="read-more">Baca Selengkapnya ➔</a>
+                </div>
+                <div class="service-box" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="sv-icon">📱</div>
+                    <h3>Desain UI/UX Seluler (Flutter)</h3>
+                    <p>Merancang layar aplikasi berkinerja tinggi, fungsionalitas intuitif, untuk perangkat seluler yang
+                        menarget kemudahan bertransaksi pelanggan.</p>
+                    <a href="#" class="read-more">Baca Selengkapnya ➔</a>
+                </div>
+                <div class="service-box" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="sv-icon">⚙️</div>
+                    <h3>Integrasi Front App (API)</h3>
+                    <p>Memastikan bahwa data fungsional dari Back-End atau API Cuaca dapat merespon ke desain secara
+                        dinamis
+                        (*real-time processing*).</p>
+                    <a href="#" class="read-more">Baca Selengkapnya ➔</a>
+                </div>
+                <div class="service-box" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="sv-icon">🔤</div>
+                    <h3>Tipografi & Design System</h3>
+                    <p>Pemilihan warna (*Palette*), penyelarasan *layout grid*, dan hierarki visual agar web tampil
+                        dengan
+                        sangat estetik tak bersela.</p>
+                    <a href="#" class="read-more">Baca Selengkapnya ➔</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- HIGHLIGHTS / TARGET -->
-    <section class="container" style="position:relative">
-        <div class="highlights">
-            <div class="highlight-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="hl-icon">🎯</div>
-                <h3>Desain Akurat</h3>
-                <p>Pengembangan antarmuka berprinsip pixel-perfect untuk memastikan visual persis dengan rancangan awal
-                    dari Figma.</p>
-            </div>
-            <div class="highlight-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="hl-icon">⚡</div>
-                <h3>Kinerja Optimal</h3>
-                <p>Website yang ringan, cepat dimuat, dengan skor aksesibilitas dan performa yang prima di berbagai
-                    perangkat.</p>
-            </div>
-            <div class="highlight-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="hl-icon">📱</div>
-                <h3>Mobile Responsive</h3>
-                <p>Menjamin fungsionalitas dan estetika layout yang beradaptasi dengan mulus pada layar ukuran
-                    smartphone hingga desktop.</p>
-            </div>
-        </div>
-    </section>
+        <!-- SKILLS SECTION -->
+        <section class="section-padding container skills-section">
+            <div data-aos="fade-right">
+                <h4 style="color:var(--secondary);margin-bottom:10px;">Kemampuan Saya</h4>
+                <h2 class="section-title">Saya Mengembangkan Keahlian Secara Berkala</h2>
+                <p class="section-subtitle">
+                    Dunia teknologi maju sangat cepat. Berbekal mental peretas dan tekad yang gigih, berikut adalah
+                    fondasi
+                    persenjataan pemrograman yang rutin saya latih.
+                </p>
 
-    <!-- ABOUT SECTION -->
-    <section id="about" class="about container">
-        <div class="about-image" data-aos="fade-right">
-            <div class="about-blob"></div>
-            <div class="about-shape">
-                <!-- Foto cadangan jika user punya -->
-                <img src="img/WhatsApp Image 2025-11-25 at 09.58.58.jpeg" alt="Tentang Saya">
-            </div>
-        </div>
-
-        <div class="about-text" data-aos="fade-left">
-            <h4 style="color:var(--secondary);margin-bottom:10px;">Tentang Saya</h4>
-            <h2 class="section-title">Solusi Desain Front-End untuk Membuka Potensi Website Anda</h2>
-            <p style="color:var(--text-muted); margin-bottom: 20px;">
-                Saya mengeksplorasi bahasa pemrograman untuk mengubah ide desain kompleks menjadi aplikasi interaktif.
-                Dengan jam terbang dalam membangun komponen dinamis dan antarmuka responsif, proyek Anda akan berada di
-                tangan yang tepat.
-            </p>
-            <a href="#services" class="btn btn-primary" style="margin-bottom:20px;">Berbincang Sekarang ➔</a>
-
-            <div class="about-stats">
-                <div class="stat-item">
-                    <h4>15+</h4>
-                    <p>Proyek Kompleks Selesai</p>
+                <div class="skills-grid">
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="skill-icon">
+                            <img src="img/html_logo.png" alt="HTML5"
+                                style="width: 80px; height: 80px; object-fit: contain;">
+                        </div>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="skill-icon">
+                            <img src="img/css_logo.png" alt="CSS3"
+                                style="width: 80px; height: 80px; object-fit: contain;">
+                        </div>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="skill-icon">
+                            <img src="img/flutter_logo.png" alt="Flutter"
+                                style="width: 80px; height: 80px; object-fit: contain;">
+                        </div>
+                        <span>Flutter</span>
+                    </div>
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="skill-icon">
+                            <img src="img/dart_logo.png" alt="Dart"
+                                style="width: 80px; height: 80px; object-fit: contain;">
+                        </div>
+                        <span>Dart</span>
+                    </div>
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="500">
+                        <div class="skill-icon">
+                            <i class="devicon-php-plain colored"
+                                style="font-size: 80px; display: inline-flex; align-items: center; justify-content: center;"></i>
+                        </div>
+                        <span>PHP</span>
+                    </div>
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="600">
+                        <div class="skill-icon">
+                            <i class="devicon-laravel-original colored"
+                                style="font-size: 80px; display: inline-flex; align-items: center; justify-content: center;"></i>
+                        </div>
+                        <span>Laravel</span>
+                    </div>
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="700">
+                        <div class="skill-icon">
+                            <i class="devicon-mysql-original colored"
+                                style="font-size: 80px; display: inline-flex; align-items: center; justify-content: center;"></i>
+                        </div>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="800">
+                        <div class="skill-icon">
+                            <i class="devicon-supabase-plain colored"
+                                style="font-size: 80px; display: inline-flex; align-items: center; justify-content: center;"></i>
+                        </div>
+                        <span>Supabase</span>
+                    </div>
                 </div>
-                <div class="stat-item">
-                    <h4>100%</h4>
-                    <p>Dedikasi Antarmuka Web</p>
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- PORTFOLIO SECTION -->
-    <section id="portfolio" class="section-padding" style="background:var(--bg-main)">
-        <div class="container">
+        <!-- CERTIFICATES SECTION -->
+        <section id="certificates" class="section-padding container">
             <div class="text-center" data-aos="fade-up">
-                <h4 style="color:var(--secondary);margin-bottom:10px;">Portofolio</h4>
-                <h2 class="section-title">Lihat Proyek Terbaru Saya</h2>
-                <p class="section-subtitle">Kumpulan beberapa mahakarya yang telah saya rancang, dari dasbor *Smart
-                    Home* hingga prototipe fungsional sistem Web & IoT.</p>
+                <h4 style="color:var(--secondary);margin-bottom:10px;">Pencapaian</h4>
+                <h2 class="section-title">Sertifikasi dan Penghargaan</h2>
+                <p class="section-subtitle">Beberapa sertifikat apresiasi dan kelulusan yang telah saya raih untuk
+                    meningkatkan kompetensi.</p>
             </div>
 
-            <div class="portfolio-grid">
-                <!-- Gunakan gambar proyek milik user -->
-                <div class="pf-card" data-aos="fade-up" data-aos-delay="100"
-                    data-title="Simulasi Rangkaian Dasar (ESP32)" data-category="Sistem Simulasi IoT"
-                    data-image="img/project1.png" 
-                    data-desc="Proyek ini mensimulasikan lingkungan dasar IoT menggunakan kontroler ESP32, dirancang untuk menunjukkan responsivitas perangkat keras virtual terhadap kontrol antarmuka secara real-time. Bahasa yang digunakan mencakup C++ dan JavaScript untuk integrasi.">
-                    <div class="pf-img"><img src="img/project1.png" alt="Proyek 1"></div>
-                    <div class="pf-info">
-                        <div class="pf-category">Sistem Simulasi IoT</div>
-                        <h3>Simulasi Rangkaian Dasar (ESP32)</h3>
+            <div class="certs-grid">
+                <!-- Envelope 1 -->
+                <div class="cert-item" data-aos="zoom-in" data-aos-delay="100"
+                    onclick="openCertModal('img/sertifikat_satu.jpg')">
+                    <div class="cert-envelope-container">
+                        <div class="cert-envelope-flap"></div>
+                        <div class="cert-envelope-letter">
+                            <img src="img/sertifikat_satu.jpg" alt="Peserta Terbaik Pelatihan TIK">
+                        </div>
+                        <div class="cert-envelope-front"></div>
                     </div>
+                    <div class="cert-title">Peserta Terbaik Pelatihan TIK Jatim</div>
                 </div>
 
-                <div class="pf-card" data-aos="fade-up" data-aos-delay="200"
-                    data-title="Antarmuka Dasbor Smart Home Modern" data-category="UI/UX Web App"
-                    data-image="img/project2.png"
-                    data-desc="Dasbor web fungsional yang memungkinkan klien untuk memantau penggunaan energi, mengatur pencahayaan, dan keamanan rumah secara holistik dengan desain bergaya glassmorphism dan tata letak grid.">
-                    <div class="pf-img"><img src="img/project2.png" alt="Proyek 2"></div>
-                    <div class="pf-info">
-                        <div class="pf-category">UI/UX Web App</div>
-                        <h3>Antarmuka Dasbor Smart Home Modern</h3>
+                <!-- Envelope 2 -->
+                <div class="cert-item" data-aos="zoom-in" data-aos-delay="200"
+                    onclick="openCertModal('img/sertifikat_dua.jpg')">
+                    <div class="cert-envelope-container">
+                        <div class="cert-envelope-flap"></div>
+                        <div class="cert-envelope-letter">
+                            <img src="img/sertifikat_dua.jpg" alt="Peserta Pelatihan TIK Jatim">
+                        </div>
+                        <div class="cert-envelope-front"></div>
                     </div>
+                    <div class="cert-title">Peserta Pelatihan TIK Jatim 2025</div>
                 </div>
 
-                <div class="pf-card" data-aos="fade-up" data-aos-delay="300"
-                    data-title="Landing Page Restoran Nusantara" data-category="UI/UX Web Design"
-                    data-image="img/website_satu.png"
-                    data-desc="Desain antarmuka landing page premium untuk restoran Shaqueena yang menyajikan masakan khas Nusantara. Mengusung visual elegan, navigasi menu (Sate, Bakso, Soto) yang tertata rapi, dan tombol panggil tindakan (Call to Action) yang menarik perhatian pelanggan.">
-                    <div class="pf-img"><img src="img/website_satu.png" alt="Restoran Shaqueena"></div>
-                    <div class="pf-info">
-                        <div class="pf-category">UI/UX Web Design</div>
-                        <h3>Landing Page Restoran Nusantara</h3>
+                <!-- Envelope 3 -->
+                <div class="cert-item" data-aos="zoom-in" data-aos-delay="300"
+                    onclick="openCertModal('img/sertifikat_tiga.jpg')">
+                    <div class="cert-envelope-container">
+                        <div class="cert-envelope-flap"></div>
+                        <div class="cert-envelope-letter">
+                            <img src="img/sertifikat_tiga.jpg" alt="Lomba Mahavation Polda Jatim">
+                        </div>
+                        <div class="cert-envelope-front"></div>
                     </div>
+                    <div class="cert-title">Lomba Mahavation Polda Jatim</div>
                 </div>
 
-                <div class="pf-card" data-aos="fade-up" data-aos-delay="400"
-                    data-title="Website Pameran Mobil Premium" data-category="Automotive Website"
-                    data-image="img/website_dua.png"
-                    data-desc="Platform dealer mobil Velocity Motors. Menggunakan tampilan mode gelap premium dengan tata letak minimalis dan eksklusif untuk menonjolkan kendaraan bergaya supercar. Dilengkapi dengan fasilitas ulasan video dan sistem pemesanan Test Drive.">
-                    <div class="pf-img"><img src="img/website_dua.png" alt="Velocity Motors"></div>
-                    <div class="pf-info">
-                        <div class="pf-category">Automotive Website</div>
-                        <h3>Website Pameran Mobil Premium</h3>
+                <!-- Envelope 4 -->
+                <div class="cert-item" data-aos="zoom-in" data-aos-delay="400"
+                    onclick="openCertModal('img/sertifikat_lima.jpg')">
+                    <div class="cert-envelope-container">
+                        <div class="cert-envelope-flap"></div>
+                        <div class="cert-envelope-letter">
+                            <img src="img/sertifikat_lima.jpg" alt="Samsung Innovation Campus">
+                        </div>
+                        <div class="cert-envelope-front"></div>
                     </div>
-                </div>
-
-                <div class="pf-card" data-aos="fade-up" data-aos-delay="500"
-                    data-title="Sistem Layanan Pengaduan Sekolah" data-category="Sistem Informasi Publik"
-                    data-image="img/website_tiga.png"
-                    data-desc="Sistem Pengaduan dan Aspirasi untuk SMKN 1 Bondowoso. Dirancang dengan elemen antarmuka yang bersih (clean UI), lengkap dengan ilustrasi modern. Sistem ini memudahkan partisipasi aktif siswa maupun masyarakat untuk menyampaikan laporan secara transparan.">
-                    <div class="pf-img"><img src="img/website_tiga.png" alt="Pengaduan SMKN 1 Bondowoso"></div>
-                    <div class="pf-info">
-                        <div class="pf-category">Sistem Informasi Publik</div>
-                        <h3>Sistem Pengaduan SMKN 1 Bondowoso</h3>
-                    </div>
-                </div>
-
-                <div class="pf-card" data-aos="fade-up" data-aos-delay="600"
-                    data-title="Aplikasi Pemesanan Makanan Sehat" data-category="Food Delivery Platform"
-                    data-image="img/website_empat.png"
-                    data-desc="Desain aplikasi web pengiriman makanan segar premium. Mengoptimalkan palet warna cerah namun menenangkan demi menyorot sajian makanan bergizi. Memiliki navigasi kategori yang gampang diakses serta menu cari berfitur lengkap (lengkap dengan penanda popularitas & waktu pengantaran).">
-                    <div class="pf-img"><img src="img/website_empat.png" alt="Food Delivery"></div>
-                    <div class="pf-info">
-                        <div class="pf-category">Food Delivery Platform</div>
-                        <h3>Aplikasi Pemesanan Makanan Sehat</h3>
-                    </div>
+                    <div class="cert-title">Samsung Innovation Campus</div>
                 </div>
             </div>
-            <div class="text-center">
-                <a href="https://github.com" class="btn btn-outline" target="_blank">Lihat Semua Proyek ➔</a>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- SERVICES -->
-    <section id="services" class="services-section section-padding">
-        <div class="container text-center" data-aos="fade-up">
-            <h4 style="color:var(--secondary);margin-bottom:10px;">Layanan Inti</h4>
-            <h2 class="section-title">Apa Yang Saya Lakukan Untuk Mengembangkan Usaha Anda</h2>
-        </div>
-        <div class="container services-grid" style="margin-top:40px;">
-            <div class="service-box" data-aos="zoom-in" data-aos-delay="100">
-                <div class="sv-icon">💻</div>
-                <h3>Pengembangan Antarmuka Web</h3>
-                <p>Membuat struktur dan gaya visual situs (HTML, CSS, modern JS) layaknya sulap yang indah namun tetap
-                    optimal dalam setiap baris kodenya.</p>
-                <a href="#" class="read-more">Baca Selengkapnya ➔</a>
-            </div>
-            <div class="service-box" data-aos="zoom-in" data-aos-delay="200">
-                <div class="sv-icon">📱</div>
-                <h3>Desain UI/UX Seluler (Flutter)</h3>
-                <p>Merancang layar aplikasi berkinerja tinggi, fungsionalitas intuitif, untuk perangkat seluler yang
-                    menarget kemudahan bertransaksi pelanggan.</p>
-                <a href="#" class="read-more">Baca Selengkapnya ➔</a>
-            </div>
-            <div class="service-box" data-aos="zoom-in" data-aos-delay="300">
-                <div class="sv-icon">⚙️</div>
-                <h3>Integrasi Front App (API)</h3>
-                <p>Memastikan bahwa data fungsional dari Back-End atau API Cuaca dapat merespon ke desain secara dinamis
-                    (*real-time processing*).</p>
-                <a href="#" class="read-more">Baca Selengkapnya ➔</a>
-            </div>
-            <div class="service-box" data-aos="zoom-in" data-aos-delay="400">
-                <div class="sv-icon">🔤</div>
-                <h3>Tipografi & Design System</h3>
-                <p>Pemilihan warna (*Palette*), penyelarasan *layout grid*, dan hierarki visual agar web tampil dengan
-                    sangat estetik tak bersela.</p>
-                <a href="#" class="read-more">Baca Selengkapnya ➔</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- SKILLS SECTION -->
-    <section class="section-padding container skills-section">
-        <div data-aos="fade-right">
-            <h4 style="color:var(--secondary);margin-bottom:10px;">Kemampuan Saya</h4>
-            <h2 class="section-title">Saya Mengembangkan Keahlian Secara Berkala</h2>
-            <p class="section-subtitle">
-                Dunia teknologi maju sangat cepat. Berbekal mental peretas dan tekad yang gigih, berikut adalah fondasi
-                persenjataan pemrograman yang rutin saya latih.
-            </p>
-
-            <div class="skills-grid">
-                <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="skill-icon">
-                        <img src="img/html_logo.png" alt="HTML5" style="width: 80px; height: 80px; object-fit: contain;">
-                    </div>
-                    <span>HTML5</span>
+        <!-- CALL TO ACTION -->
+        <div class="container" style="position:relative;">
+            <div class="cta-box" data-aos="zoom-in">
+                <div>
+                    <h2 style="margin-bottom:10px;">Mari Bekerja Sama!</h2>
+                    <p style="opacity:0.9">Siap membangun antarmuka canggih untuk visi masa depan Anda.</p>
                 </div>
-                <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="skill-icon">
-                        <img src="img/css_logo.png" alt="CSS3" style="width: 80px; height: 80px; object-fit: contain;">
-                    </div>
-                    <span>CSS3</span>
-                </div>
-                <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="skill-icon">
-                        <img src="img/flutter_logo.png" alt="Flutter"
-                            style="width: 80px; height: 80px; object-fit: contain;">
-                    </div>
-                    <span>Flutter</span>
-                </div>
-                <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="skill-icon">
-                        <img src="img/dart_logo.png" alt="Dart" style="width: 80px; height: 80px; object-fit: contain;">
-                    </div>
-                    <span>Dart</span>
-                </div>
-                <div class="skill-card" data-aos="zoom-in" data-aos-delay="500">
-                    <div class="skill-icon">
-                        <i class="devicon-php-plain colored" style="font-size: 80px; display: inline-flex; align-items: center; justify-content: center;"></i>
-                    </div>
-                    <span>PHP</span>
-                </div>
-                <div class="skill-card" data-aos="zoom-in" data-aos-delay="600">
-                    <div class="skill-icon">
-                        <i class="devicon-laravel-original colored" style="font-size: 80px; display: inline-flex; align-items: center; justify-content: center;"></i>
-                    </div>
-                    <span>Laravel</span>
-                </div>
-                <div class="skill-card" data-aos="zoom-in" data-aos-delay="700">
-                    <div class="skill-icon">
-                        <i class="devicon-mysql-original colored" style="font-size: 80px; display: inline-flex; align-items: center; justify-content: center;"></i>
-                    </div>
-                    <span>MySQL</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CERTIFICATES SECTION -->
-    <section id="certificates" class="section-padding container">
-        <div class="text-center" data-aos="fade-up">
-            <h4 style="color:var(--secondary);margin-bottom:10px;">Pencapaian</h4>
-            <h2 class="section-title">Sertifikat Profesional</h2>
-            <p class="section-subtitle">Beberapa sertifikat apresiasi dan kelulusan yang telah saya raih untuk meningkatkan kompetensi.</p>
-        </div>
-
-        <div class="certs-grid">
-            <!-- Envelope 1 -->
-            <div class="cert-item" data-aos="zoom-in" data-aos-delay="100" onclick="openCertModal('img/sertifikat_satu.jpg')">
-                <div class="cert-envelope-container">
-                    <div class="cert-envelope-flap"></div>
-                    <div class="cert-envelope-letter">
-                        <img src="img/sertifikat_satu.jpg" alt="Peserta Terbaik Pelatihan TIK">
-                    </div>
-                    <div class="cert-envelope-front"></div>
-                </div>
-                <div class="cert-title">Peserta Terbaik Pelatihan TIK Jatim</div>
-            </div>
-
-            <!-- Envelope 2 -->
-            <div class="cert-item" data-aos="zoom-in" data-aos-delay="200" onclick="openCertModal('img/sertifikat_dua.jpg')">
-                <div class="cert-envelope-container">
-                    <div class="cert-envelope-flap"></div>
-                    <div class="cert-envelope-letter">
-                        <img src="img/sertifikat_dua.jpg" alt="Peserta Pelatihan TIK Jatim">
-                    </div>
-                    <div class="cert-envelope-front"></div>
-                </div>
-                <div class="cert-title">Peserta Pelatihan TIK Jatim 2025</div>
-            </div>
-
-            <!-- Envelope 3 -->
-            <div class="cert-item" data-aos="zoom-in" data-aos-delay="300" onclick="openCertModal('img/sertifikat_tiga.jpg')">
-                <div class="cert-envelope-container">
-                    <div class="cert-envelope-flap"></div>
-                    <div class="cert-envelope-letter">
-                        <img src="img/sertifikat_tiga.jpg" alt="Lomba Mahavation Polda Jatim">
-                    </div>
-                    <div class="cert-envelope-front"></div>
-                </div>
-                <div class="cert-title">Lomba Mahavation Polda Jatim</div>
-            </div>
-
-            <!-- Envelope 4 -->
-            <div class="cert-item" data-aos="zoom-in" data-aos-delay="400" onclick="openCertModal('img/sertifikat_lima.jpg')">
-                <div class="cert-envelope-container">
-                    <div class="cert-envelope-flap"></div>
-                    <div class="cert-envelope-letter">
-                        <img src="img/sertifikat_lima.jpg" alt="Samsung Innovation Campus">
-                    </div>
-                    <div class="cert-envelope-front"></div>
-                </div>
-                <div class="cert-title">Samsung Innovation Campus</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CALL TO ACTION -->
-    <div class="container" style="position:relative;">
-        <div class="cta-box" data-aos="zoom-in">
-            <div>
-                <h2 style="margin-bottom:10px;">Mari Bekerja Sama!</h2>
-                <p style="opacity:0.9">Siap membangun antarmuka canggih untuk visi masa depan Anda.</p>
-            </div>
-            <a href="#contact" class="btn" style="background:white; color:var(--primary);">Hubungi Rafi Sekarang</a>
-        </div>
-    </div>
-
-    <!-- MODAL POPUP PROYEK -->
-    <div id="projectModal" class="project-modal">
-        <div class="modal-content">
-            <button class="modal-close" onclick="closeModal()">×</button>
-            <div>
-                <img id="modalImg" src="" alt="Detail Proyek" class="modal-img">
-            </div>
-            <div class="modal-info">
-                <div id="modalCategory" class="modal-category"></div>
-                <h3 id="modalTitle" class="modal-title"></h3>
-                <p id="modalDesc" class="modal-desc"></p>
-                <div class="modal-links">
-                    <a href="#" id="modalDemoBtn" class="btn btn-primary" style="padding: 10px 20px;"
-                        target="_blank">Live Demo</a>
-                    <a href="#" id="modalGithubBtn" class="btn btn-outline" style="padding: 10px 20px;"
-                        target="_blank">Kode GitHub</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- FOOTER -->
-    <footer id="contact">
-        <div class="container footer-grid">
-            <div>
-                <a href="#" class="footer-logo">Rf<span style="color:var(--primary)">.io</span></a>
-                <p style="margin-bottom:20px; font-size:14px; opacity:0.8;">Pusat pembuatan solusi Front-End dan
-                    rancangan visual terbaik yang memadukan keindahan, kemudahan akses, dan konversi target
-                    fungsionalitas murni.</p>
-                <div style="display:flex;gap:15px; font-weight:bold;">
-                    <a href="#" style="color:var(--primary)">LD</a>
-                    <a href="#" style="color:var(--secondary)">GH</a>
-                    <a href="#" style="color:var(--light-accent)">IG</a>
-                </div>
-            </div>
-
-            <div>
-                <h4>Navigasi</h4>
-                <ul class="footer-links">
-                    <li><a href="#">Beranda</a></li>
-                    <li><a href="#about">Tentang</a></li>
-                    <li><a href="#services">Layanan</a></li>
-                    <li><a href="#portfolio">Portofolio</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h4>Bantuan</h4>
-                <ul class="footer-links">
-                    <li><a href="#">FAQ / Pertanyaanmu</a></li>
-                    <li><a href="#">Syarat & Ketentuan</a></li>
-                    <li><a href="#">Privasi Pengguna</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h4>Kontak Langsung</h4>
-                <ul class="footer-links" style="opacity:0.8;">
-                    <li style="margin-bottom:8px;">MohammadRafikhulArdiansyah@gmail.com</li>
-                    <li style="margin-bottom:8px;">+62 85 147 191 733</li>
-                    <li>Jawa Timur, Indonesia</li>
-                </ul>
+                <a href="#contact" class="btn" style="background:white; color:var(--primary);">Hubungi Rafi Sekarang</a>
             </div>
         </div>
 
-        <div class="container copyright">
-            &copy; <span id="year"></span> Rafi Front-End Developer. Semua Hak Dilindungi. Didesain dengan penuh
-            <div class="cta-text">
-                <h2>Tertarik untuk berkolaborasi?</h2>
-                <p>Mari diskusikan solusi teknologi terbaik untuk mewujudkan ide Anda menjadi nyata.</p>
+        <!-- MODAL POPUP PROYEK -->
+        <div id="projectModal" class="project-modal">
+            <div class="modal-content">
+                <button class="modal-close" onclick="closeModal()">×</button>
+                <div>
+                    <img id="modalImg" src="" alt="Detail Proyek" class="modal-img">
+                </div>
+                <div class="modal-info">
+                    <div id="modalCategory" class="modal-category"></div>
+                    <h3 id="modalTitle" class="modal-title"></h3>
+                    <p id="modalDesc" class="modal-desc"></p>
+                    <div class="modal-links">
+                        <a href="#" id="modalDemoBtn" class="btn btn-primary" style="padding: 10px 20px;"
+                            target="_blank">Live Demo</a>
+                        <a href="#" id="modalGithubBtn" class="btn btn-outline" style="padding: 10px 20px;"
+                            target="_blank">Kode GitHub</a>
+                    </div>
+                </div>
             </div>
-            <a href="mailto:username@email.com" class="btn btn-footer-email">Kirim Email Sekarang</a>
         </div>
-    </footer>
+
+        <!-- FOOTER -->
+        <footer id="contact">
+            <div class="container footer-grid">
+                <div>
+                    <a href="#" class="footer-logo">Rf<span style="color:var(--primary)">.io</span></a>
+                    <p style="margin-bottom:20px; font-size:14px; opacity:0.8;">Pusat pembuatan solusi Front-End dan
+                        rancangan visual terbaik yang memadukan keindahan, kemudahan akses, dan konversi target
+                        fungsionalitas murni.</p>
+                    <div style="display:flex;gap:15px; font-weight:bold;">
+                        <a href="#" style="color:var(--primary)">LD</a>
+                        <a href="#" style="color:var(--secondary)">GH</a>
+                        <a href="#" style="color:var(--light-accent)">IG</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>Navigasi</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Beranda</a></li>
+                        <li><a href="#about">Tentang</a></li>
+                        <li><a href="#services">Layanan</a></li>
+                        <li><a href="#portfolio">Portofolio</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Bantuan</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQ / Pertanyaanmu</a></li>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                        <li><a href="#">Privasi Pengguna</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Kontak Langsung</h4>
+                    <ul class="footer-links" style="opacity:0.8;">
+                        <li style="margin-bottom:8px;">MohammadRafikhulArdiansyah@gmail.com</li>
+                        <li style="margin-bottom:8px;">+62 85 147 191 733</li>
+                        <li>Jawa Timur, Indonesia</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container copyright">
+                &copy; <span id="year"></span> Rafi Front-End Developer. Semua Hak Dilindungi. Didesain dengan penuh
+                <div class="cta-text">
+                    <h2>Tertarik untuk berkolaborasi?</h2>
+                    <p>Mari diskusikan solusi teknologi terbaik untuk mewujudkan ide Anda menjadi nyata.</p>
+                </div>
+                <a href="mailto:username@email.com" class="btn btn-footer-email">Kirim Email Sekarang</a>
+            </div>
+        </footer>
 
         <!-- CERTIFICATE MODAL POPUP -->
         <div class="project-modal" id="certModal">
@@ -674,7 +701,7 @@
             });
             // Logika Modal Sertifikat
             const certModalContainer = document.getElementById('certModal');
-            
+
             function openCertModal(imageSrc) {
                 document.getElementById('certModalImg').src = imageSrc;
                 certModalContainer.classList.add('active');
@@ -686,7 +713,7 @@
                 document.body.style.overflow = '';
             }
 
-            if(certModalContainer) {
+            if (certModalContainer) {
                 certModalContainer.addEventListener('click', (e) => {
                     if (e.target === certModalContainer) {
                         closeCertModal();
@@ -702,26 +729,26 @@
                 mainWrapper.style.transition = 'opacity 0.6s ease';
                 document.body.style.overflow = 'hidden';
                 window.scrollTo(0, 0);
-                
+
                 const canvas = document.getElementById('loader-canvas');
                 const ctx = canvas.getContext('2d');
                 let width, height;
                 let particles = [];
-                
+
                 function resize() {
                     width = window.innerWidth;
                     height = window.innerHeight;
                     canvas.width = width;
                     canvas.height = height;
                 }
-                
+
                 window.addEventListener('resize', resize);
                 resize();
-                
+
                 class Particle {
                     constructor() {
                         this.reset();
-                        this.y = Math.random() * height; 
+                        this.y = Math.random() * height;
                     }
                     reset() {
                         this.x = Math.random() * width;
@@ -741,11 +768,11 @@
                         ctx.fill();
                     }
                 }
-                
+
                 for (let i = 0; i < 20; i++) {
                     particles.push(new Particle());
                 }
-                
+
                 let animFrame;
                 function animate() {
                     ctx.clearRect(0, 0, width, height);
@@ -757,19 +784,19 @@
                 }
                 animate();
 
-                const loaderWrapper= document.getElementById('loader-wrapper');
-                const loaderContent= document.querySelector('.loader-content');
-                
+                const loaderWrapper = document.getElementById('loader-wrapper');
+                const loaderContent = document.querySelector('.loader-content');
+
                 setTimeout(() => {
                     loaderContent.style.transform = 'scale(0.95)';
                     loaderContent.style.opacity = '0';
                     loaderWrapper.style.backgroundColor = '#FFFFFF';
-                    
+
                     setTimeout(() => {
                         loaderWrapper.style.opacity = '0';
                         mainWrapper.style.opacity = '1';
                         document.body.style.overflow = '';
-                        
+
                         setTimeout(() => {
                             loaderWrapper.style.display = 'none';
                             cancelAnimationFrame(animFrame);
@@ -779,4 +806,6 @@
             });
         </script>
     </div> <!-- MAIN WRAPPER END -->
-</body></html>
+</body>
+
+</html>

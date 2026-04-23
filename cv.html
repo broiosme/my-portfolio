@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CV - Mohammad Rafikhul Ardiansyah</title>
+    <!-- Hubungkan variable dan setting umum style portfolio -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="profil.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    
+    <style>
+        /* === CV SPECIFIC CSS === */
+        :root {
+            --cv-bg: #e2e8f0;
+            --cv-sidebar-bg: #050811; /* Dark theme sidebar */
+            --cv-sidebar-text: #f8fafc;
+            --cv-main-bg: #ffffff;
+            --cv-main-text: #0f172a;
+            --cv-accent: #4f46e5; /* Primary */
+            --cv-secondary: #3b82f6;
+            --cv-border: #e2e8f0;
+        }
+
+        /* Pastikan elemen ini dan shadow ter-load paksa saat print */
+        * {
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+        }
+
+        body.cv-body {
+            background-color: var(--cv-bg);
+            padding: 2rem 1rem;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            font-family: 'Inter', system-ui, sans-serif;
+            margin: 0;
+            padding-top: 2rem;
+            color: var(--cv-main-text);
+        }
+
+        .cv-wrapper {
+            width: 100%;
+            max-width: 950px;
+            background: var(--cv-main-bg);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            display: grid;
+            grid-template-columns: 1fr;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .cv-wrapper {
+                grid-template-columns: 310px 1fr;
+            }
+        }
+
+        /* SIDEBAR (Kiri) */
+        .cv-sidebar {
+            background-color: var(--cv-sidebar-bg);
+            color: var(--cv-sidebar-text);
+            padding: 2.5rem 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Foto Bulat Lingkaran */
+        .cv-profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 2rem;
+            border: 3px solid rgba(0, 242, 255, 0.3);
+            box-shadow: 0 0 20px rgba(0, 242, 255, 0.15);
+        }
+
+        @media(max-width: 767px) {
+            .cv-profile-img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+        .cv-header-mobile {
+            display: none;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        @media(max-width: 767px) {
+            .cv-header-mobile {
+                display: block;
+            }
+        }
+
+        .cv-name {
+            font-size: 2rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 0.5rem;
+            color: var(--cv-sidebar-text);
+        }
+
+        .cv-title {
+            font-size: 1rem;
+            color: #00f2ff; /* Variasi warna dark mode sekunder/primer */
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .sidebar-section {
+            width: 100%;
+            margin-bottom: 2.5rem;
+        }
+
+        .sidebar-section h3 {
+            font-size: 1.125rem;
+            color: var(--cv-sidebar-text);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .contact-list li {
+            margin-bottom: 1rem;
+            font-size: 0.875rem;
+            line-height: 1.5;
+            color: #cbd5e1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-list li strong {
+            color: #00f2ff;
+            font-weight: 600;
+            margin-bottom: 2px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+        }
+        
+        .contact-list li a {
+            color: #cbd5e1;
+            text-decoration: none;
+        }
+
+        .contact-list li a:hover {
+            color: #fff;
+        }
+
+        /* Skills Logos */
+        .cv-skills {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            text-align: center;
+        }
+
+        @media(min-width: 768px) {
+            .cv-skills {
+                 grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .cv-skill-icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 2.5rem; /* Ukuran icon */
+            color: #fff;
+            filter: drop-shadow(0 0 5px rgba(0, 242, 255, 0.4));
+        }
+
+        .cv-skill-icon span {
+            font-size: 0.7rem;
+            margin-top: 0.5rem;
+            color: #cbd5e1;
+        }
+
+        /* KONTEN UTAMA (Kanan) */
+        .cv-main {
+            padding: 3rem 2.5rem;
+            background: var(--cv-main-bg);
+        }
+
+        .cv-header-desktop {
+            margin-bottom: 2.5rem;
+        }
+
+        .cv-header-desktop h1 {
+            font-size: 2.75rem;
+            font-weight: 800;
+            color: var(--cv-main-text);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+            letter-spacing: -1px;
+        }
+
+        .cv-header-desktop h2 {
+            font-size: 1.25rem;
+            color: var(--cv-accent);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+
+        @media(max-width: 767px) {
+            .cv-header-desktop {
+                display: none;
+            }
+            .cv-main {
+                padding: 2rem 1.5rem;
+            }
+        }
+
+        .main-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .main-section-title {
+            font-size: 1.5rem;
+            color: var(--cv-accent);
+            border-bottom: 2px solid var(--cv-border);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+        }
+        
+        .main-section-title::before {
+            content: "•";
+            color: var(--cv-secondary);
+            margin-right: 10px;
+            font-size: 2rem;
+            line-height: 0;
+        }
+
+        .cv-text {
+            font-size: 0.95rem;
+            color: #334155;
+            line-height: 1.6;
+        }
+
+        /* Riwayat Pendidikan & Proyek */
+        .timeline-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.25rem;
+            flex-wrap: wrap;
+        }
+
+        .timeline-title {
+            font-weight: 700;
+            font-size: 1.125rem;
+            color: var(--cv-main-text);
+        }
+
+        .timeline-date {
+            font-weight: 600;
+            color: var(--cv-secondary);
+            font-size: 0.875rem;
+        }
+
+        .timeline-subtitle {
+            font-weight: 600;
+            color: #475569;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-desc {
+            font-size: 0.9rem;
+            color: #475569;
+            line-height: 1.5;
+        }
+
+        /* Sertifikat grid */
+        .cert-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        @media(max-width: 600px) {
+            .cert-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .cert-list li {
+            background: var(--bg-alt);
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 3px solid var(--cv-secondary);
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--cv-main-text);
+        }
+
+        /* Action Buttons Fixed */
+        .cv-actions {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            display: flex;
+            gap: 1rem;
+            z-index: 100;
+        }
+
+        .btn-cv {
+            background: var(--cv-accent);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.4);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .btn-cv:hover {
+            background: var(--primary-hover);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 25px -5px rgba(79, 70, 229, 0.5);
+        }
+
+        /* CETAK / PRINT STYLES - Tanpa menghilangkan warna dari UI (Tetap Sama Gelapnya) */
+        @media print {
+            @page {
+                size: A4 portrait;
+                margin: 0;
+            }
+
+            body.cv-body {
+                background: white;
+                padding: 0;
+                margin: 0;
+                display: block;
+            }
+
+            .cv-wrapper {
+                box-shadow: none;
+                border-radius: 0;
+                margin: 0 auto;
+                max-width: 100%;
+                width: 794px; /* Lebar piksel mendekati resolusi A4 normal */
+                height: 1123px; /* Memaksa ke 1 halaman A4 penuh agar bagus */
+                display: grid;
+                grid-template-columns: 260px 1fr; /* Sedikit dilangsingkan */
+                overflow: hidden;
+                page-break-after: avoid;
+            }
+
+            .cv-actions {
+                display: none !important;
+            }
+
+            /* Saat di print (A4), pastikan teks lebih kontras dan background tersimpan persis */
+            .cv-sidebar {
+                background-color: var(--cv-sidebar-bg) !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                padding: 2rem 1.5rem;
+            }
+
+            .cv-main {
+                background-color: var(--cv-main-bg) !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                padding: 2rem 2rem;
+            }
+
+            .cv-skill-icon {
+                filter: none; /* Shadow neon sulit di print engine PDF */
+                font-size: 1.8rem;
+            }
+            .cv-skills { gap: 1rem; }
+
+            .cv-profile-img {
+                width: 130px;
+                height: 130px;
+                margin-bottom: 1.5rem;
+            }
+
+            .cert-list li {
+                border: 1px solid #e2e8f0;
+                background-color: var(--bg-alt) !important;
+                border-left: 3px solid var(--cv-secondary) !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                padding: 0.6rem;
+            }
+
+            /* Cegah elemen terpotong (kepotong) margin halaman saat print/PDF */
+            .cv-skill-icon,
+            .cert-list li,
+            .timeline-item,
+            .sidebar-section {
+                page-break-inside: avoid;
+                break-inside: avoid;
+            }
+
+            /* Kompresi skala font dan margin yang EKSTRIM agar muat 1 lembar A4 sempurna */
+            html { font-size: 11px; }
+            .sidebar-section { margin-bottom: 1.5rem; }
+            .sidebar-section h3 { margin-bottom: 0.5rem; }
+            .contact-list li { margin-bottom: 0.5rem; }
+            .main-section { margin-bottom: 1.2rem; }
+            .main-section-title { margin-bottom: 0.8rem; font-size: 1.4rem; padding-bottom: 0.3rem; }
+            .timeline-item { margin-bottom: 0.8rem; }
+            .cv-header-desktop { margin-bottom: 1.5rem; }
+            .cv-header-desktop h1 { font-size: 2.2rem; margin-bottom: 0.2rem; }
+            .cv-header-desktop h2 { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+
+<body class="cv-body">
+
+    <div class="cv-wrapper">
+        <!-- SIDEBAR (Kiri) -->
+        <aside class="cv-sidebar">
+            <img src="img/WhatsApp Image 2026-04-22 at 13.25.52.jpeg" alt="Foto Profil" class="cv-profile-img">
+            
+            <!-- Mobile Header Only -->
+            <div class="cv-header-mobile">
+                <div class="cv-name">Mohammad Rafikhul Ardiansyah</div>
+                <div class="cv-title">Junior Front-End Developer</div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Detail Pribadi</h3>
+                <ul class="contact-list">
+                    <li>
+                        <strong>Tanggal Lahir</strong>
+                        17 November 2008
+                    </li>
+                    <li>
+                        <strong>Jenis Kelamin</strong>
+                        Laki-Laki
+                    </li>
+                    <li>
+                        <strong>Kewarganegaraan</strong>
+                        Indonesia
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Kontak</h3>
+                <ul class="contact-list">
+                    <li>
+                        <strong>Email</strong>
+                        <a href="mailto:mohammadrafikhulardiansyah@gmail.com">mohammadrafikhulardiansyah@gmail.com</a>
+                    </li>
+                    <li>
+                        <strong>Telepon</strong>
+                        +62 851 471 917 33
+                    </li>
+                    <li>
+                        <strong>Alamat Lengkap</strong>
+                        Desa Taman, Grujugan, Bondowoso,<br>
+                        Jawa Timur, Indonesia. 68261
+                    </li>
+                    <li>
+                        <strong>Website Portofolio</strong>
+                        <a href="https://broiosme.github.io/my-portfolio/">broiosme.github.io/my-portfolio/</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Keahlian (Skills)</h3>
+                <div class="cv-skills">
+                    <div class="cv-skill-icon">
+                        <i class="devicon-html5-plain colored"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="cv-skill-icon">
+                        <i class="devicon-css3-plain colored"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="cv-skill-icon">
+                        <i class="devicon-flutter-plain colored"></i>
+                        <span>Flutter</span>
+                    </div>
+                    <div class="cv-skill-icon">
+                        <i class="devicon-dart-plain colored"></i>
+                        <span>Dart</span>
+                    </div>
+                    <div class="cv-skill-icon">
+                        <i class="devicon-php-plain colored"></i>
+                        <span>PHP</span>
+                    </div>
+                    <div class="cv-skill-icon">
+                        <i class="devicon-laravel-original colored"></i>
+                        <span>Laravel</span>
+                    </div>
+                    <div class="cv-skill-icon">
+                        <i class="devicon-mysql-original colored"></i>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="cv-skill-icon">
+                        <i class="devicon-supabase-plain colored"></i>
+                        <span>Supabase</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Media Sosial</h3>
+                <ul class="contact-list">
+                    <li>
+                        <strong>Instagram</strong>
+                        <a href="https://www.instagram.com/me_rfad1/" target="_blank">@me_rfad1</a>
+                    </li>
+                    <li>
+                        <strong>GitHub</strong>
+                        <a href="https://github.com/broiosme" target="_blank">github.com/broiosme</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- KONTEN UTAMA (Kanan) -->
+        <main class="cv-main">
+            <!-- Desktop Header Only -->
+            <div class="cv-header-desktop">
+                <h1>Mohammad Rafikhul Ardiansyah</h1>
+                <h2>Junior Front-End Developer</h2>
+            </div>
+
+            <section class="main-section">
+                <h3 class="main-section-title">Profil Ringkas</h3>
+                <p class="cv-text">
+                    Spesialis antarmuka pengguna (User Interface) muda yang berfokus menciptakan pengalaman website dan aplikasi seluler yang menawan, modern, serta memiliki fungsionalitas tinggi. Saya sangat antusias mengeksplorasi bahasa pemrograman untuk mengubah ide desain yang kompleks menjadi aplikasi interaktif. Terbiasa memecahkan masalah dalam membangun komponen dinamis dengan dedikasi penuh pada pixel-perfect UI.
+                </p>
+            </section>
+
+            <section class="main-section">
+                <h3 class="main-section-title">Riwayat Pendidikan</h3>
+                
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <span class="timeline-title">SMK (Sekolah Menengah Kejuruan)</span>
+                        <span class="timeline-date">2024 - Sekarang</span>
+                    </div>
+                    <div class="timeline-subtitle">SMK Negeri 1 Bondowoso</div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <span class="timeline-title">SMP (Sekolah Menengah Pertama)</span>
+                        <span class="timeline-date">2021 - 2024</span>
+                    </div>
+                    <div class="timeline-subtitle">SMP Nurul Jadid</div>
+                    <div class="timeline-desc"></div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <span class="timeline-title">MI (Madrasah Ibtidaiyah)</span>
+                        <span class="timeline-date">2015 - 2021</span>
+                    </div>
+                    <div class="timeline-subtitle">MI AT-Taqwa Bondowoso</div>
+            </section>
+
+            <section class="main-section">
+                <h3 class="main-section-title">Pengalaman Proyek</h3>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <span class="timeline-title">Sistem Pengaduan SMKN 1 Bondowoso</span>
+                        <span class="timeline-date">UI/UX Web App</span>
+                    </div>
+                    <div class="timeline-desc">Sistem Pengaduan dan Aspirasi untuk SMKN 1 Bondowoso. Dirancang dengan elemen antarmuka yang bersih (clean UI), lengkap dengan ilustrasi modern. Sistem ini memudahkan partisipasi aktif siswa maupun masyarakat untuk menyampaikan laporan secara transparan."</div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <span class="timeline-title">Landing Page Restoran Nusantara (Shaqueena)</span>
+                        <span class="timeline-date">UI/UX Web Design</span>
+                    </div>
+                    <div class="timeline-desc">Merancang desain antarmuka landing page premium yang menyajikan masakan khas Nusantara. Mengusung visual elegan, navigasi menu tertata rapi, dan tombol Call to Action berkonversi tinggi.</div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <span class="timeline-title">Aplikasi Pemesanan Makanan Sehat</span>
+                        <span class="timeline-date">Food Delivery Platform</span>
+                    </div>
+                    <div class="timeline-desc">Desain aplikasi web pengiriman makanan segar premium. Mengoptimalkan palet warna cerah namun menenangkan demi menyorot sajian makanan bergizi. Memiliki navigasi kategori serta fungsionalitas pencarian.</div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <span class="timeline-title">Website Pameran Mobil Premium (Velocity Motors)</span>
+                        <span class="timeline-date">Automotive Website</span>
+                    </div>
+                    <div class="timeline-desc">Membuat platform dealer mobil menggunakan tampilan mode gelap premium dengan tata letak eksklusif untuk menonjolkan kendaraan supercar, dilengkapi dengan sistem ulasan video.</div>
+                </div>
+            </section>
+
+            <section class="main-section">
+                <h3 class="main-section-title">Sertifikasi dan Penghargaan</h3>
+                <ul class="cert-list">
+                    <li>Peserta Terbaik Pelatihan TIK Jatim</li>
+                    <li>Sertifikat Peserta Pelatihan TIK Jatim 2025</li>
+                    <li>Lomba Mahavation Polda Jatim</li>
+                    <li>Samsung Innovation Campus</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <div class="cv-actions">
+        <button class="btn-cv" onclick="window.print()">
+            <!-- Ikon Print SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            Cetak ke PDF
+        </button>
+        <button class="btn-cv" onclick="window.location.replace('index.html')" style="background: var(--text-muted);">
+            Tutup
+        </button>
+    </div>
+
+</body>
+</html>
