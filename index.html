@@ -10,6 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <script>
+        const initialTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (initialTheme) {
+            document.documentElement.setAttribute('data-theme', initialTheme);
+        } else if (systemPrefersDark) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    </script>
 </head>
 
 <body>
@@ -74,7 +83,7 @@
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
                 </button>
-                <a href="#contact" class="btn btn-primary nav-cta">Mulai Proyek</a>
+                <a href="cv.html" class="btn btn-primary nav-cta">Lihat CV</a>
                 <button class="hamburger-btn" id="hamburger-btn" aria-label="Menu Navigasi">
                     <span></span>
                     <span></span>
@@ -96,7 +105,7 @@
                     <a href="#services" class="m-link">Layanan</a>
                     <a href="#portfolio" class="m-link">Portofolio</a>
                     <a href="#blog" class="m-link">Blog</a>
-                    <a href="#contact" class="btn btn-primary m-cta">Mulai Proyek</a>
+                    <a href="cv.html" class="btn btn-primary m-cta">Lihat CV</a>
                 </div>
             </nav>
         </header>
@@ -110,7 +119,6 @@
                         aplikasi seluler yang menawan, modern, serta memiliki konversi tinggi.</p>
                     <div class="hero-actions">
                         <a href="#portfolio" class="btn btn-primary">Lihat Proyek</a>
-                        <a href="cv.html" class="btn btn-outline">Lihat CV</a>
                     </div>
 
                     <div class="trusted-badge">
@@ -144,20 +152,23 @@
         <section class="container" style="position:relative">
             <div class="highlights">
                 <div class="highlight-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="hl-icon">🎯</div>
+                    <div class="hl-icon"><img src="img/akurat.png" alt="Desain Akurat"
+                            style="width: 40px; height: 40px; object-fit: contain;"></div>
                     <h3>Desain Akurat</h3>
                     <p>Pengembangan antarmuka berprinsip pixel-perfect untuk memastikan visual persis dengan rancangan
                         awal
                         dari Figma.</p>
                 </div>
                 <div class="highlight-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="hl-icon">⚡</div>
+                    <div class="hl-icon"><img src="img/optimal.png" alt="Kinerja Optimal"
+                            style="width: 40px; height: 40px; object-fit: contain;"></div>
                     <h3>Kinerja Optimal</h3>
                     <p>Website yang ringan, cepat dimuat, dengan skor aksesibilitas dan performa yang prima di berbagai
                         perangkat.</p>
                 </div>
                 <div class="highlight-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="hl-icon">📱</div>
+                    <div class="hl-icon"><img src="img/mobile.png" alt="Mobile Responsive"
+                            style="width: 40px; height: 40px; object-fit: contain;"></div>
                     <h3>Mobile Responsive</h3>
                     <p>Menjamin fungsionalitas dan estetika layout yang beradaptasi dengan mulus pada layar ukuran
                         smartphone hingga desktop.</p>
@@ -189,7 +200,7 @@
 
                 <div class="about-stats">
                     <div class="stat-item">
-                        <h4>15+</h4>
+                        <h4>7+</h4>
                         <p>Proyek Kompleks Selesai</p>
                     </div>
                     <div class="stat-item">
@@ -206,13 +217,40 @@
                 <div class="text-center" data-aos="fade-up">
                     <h4 style="color:var(--secondary);margin-bottom:10px;">Portofolio</h4>
                     <h2 class="section-title">Lihat Proyek Terbaru Saya</h2>
-                    <p class="section-subtitle">Kumpulan beberapa mahakarya yang telah saya rancang, dari dasbor *Smart
-                        Home* hingga prototipe fungsional sistem Web & IoT.</p>
+                    <p class="section-subtitle">Kumpulan beberapa mahakarya yang telah saya rancang, dari dasbor Smart
+                        Home hingga prototipe fungsional sistem Web & IoT.</p>
                 </div>
 
                 <div class="portfolio-grid">
-                    <!-- Gunakan gambar proyek milik user -->
-                    <div class="pf-card" data-aos="fade-up" data-aos-delay="100"
+                    <!-- PROYEK UNGGULAN 1 -->
+                    <div class="pf-card" data-aos="fade-up" data-aos-delay="100" data-title="Warung R3 Berkah"
+                        data-category="UI/UX Web Design" data-image="img/website_lima.png"
+                        data-desc="Website R3 Berkah merupakan website promosi kuliner yang menampilkan berbagai makanan dan minuman khas Indonesia dengan tampilan modern, menarik, dan responsif. Website ini dirancang untuk memperkenalkan menu unggulan kepada pelanggan melalui informasi yang jelas, kategori produk yang terorganisir, serta fitur pendukung seperti lokasi, layanan pengantaran, dan pemesanan online, sehingga memudahkan pelanggan dalam mengenal dan memilih produk yang ditawarkan.">
+                        <div class="pf-img"><img src="img/website_lima.png" alt="Warung R3 Berkah"></div>
+                        <div class="pf-info">
+                            <div class="pf-category" style="display:flex;align-items:center;">UI/UX Web Design <span
+                                    style="background:var(--primary);color:white;padding:2px 8px;border-radius:10px;font-size:0.6rem;margin-left:8px;font-weight:bold;">⭐
+                                    UNGGULAN</span></div>
+                            <h3>Warung R3 Berkah</h3>
+                        </div>
+                    </div>
+
+                    <!-- PROYEK UNGGULAN 2 -->
+                    <div class="pf-card" data-aos="fade-up" data-aos-delay="200"
+                        data-title="Sistem Layanan Pengaduan Sekolah" data-category="Sistem Informasi Publik"
+                        data-image="img/website_tiga.png"
+                        data-desc="Platform layanan publik unggulan yang mewadahi transparansi aspirasi sekolah. Dibangun dengan arsitektur UI/UX yang clean, aksesibilitas tingkat tinggi, serta alur navigasi yang intuitif sehingga memudahkan pelacakan laporan secara real-time.">
+                        <div class="pf-img"><img src="img/website_tiga.png" alt="Pengaduan SMKN 1 Bondowoso"></div>
+                        <div class="pf-info">
+                            <div class="pf-category" style="display:flex;align-items:center;">Sistem Informasi Publik
+                                <span
+                                    style="background:var(--primary);color:white;padding:2px 8px;border-radius:10px;font-size:0.6rem;margin-left:8px;font-weight:bold;">⭐
+                                    UNGGULAN</span></div>
+                            <h3>Sistem Pengaduan SMKN 1 Bondowoso</h3>
+                        </div>
+                    </div>
+
+                    <div class="pf-card" data-aos="fade-up" data-aos-delay="300"
                         data-title="Simulasi Rangkaian Dasar (ESP32)" data-category="Sistem Simulasi IoT"
                         data-image="img/project1.png"
                         data-desc="Proyek ini mensimulasikan lingkungan dasar IoT menggunakan kontroler ESP32, dirancang untuk menunjukkan responsivitas perangkat keras virtual terhadap kontrol antarmuka secara real-time. Bahasa yang digunakan mencakup C++ dan JavaScript untuk integrasi.">
@@ -223,7 +261,7 @@
                         </div>
                     </div>
 
-                    <div class="pf-card" data-aos="fade-up" data-aos-delay="200"
+                    <div class="pf-card" data-aos="fade-up" data-aos-delay="400"
                         data-title="Antarmuka Dasbor Smart Home Modern" data-category="UI/UX Web App"
                         data-image="img/project2.png"
                         data-desc="Dasbor web fungsional yang memungkinkan klien untuk memantau penggunaan energi, mengatur pencahayaan, dan keamanan rumah secara holistik dengan desain bergaya glassmorphism dan tata letak grid.">
@@ -234,7 +272,7 @@
                         </div>
                     </div>
 
-                    <div class="pf-card" data-aos="fade-up" data-aos-delay="300"
+                    <div class="pf-card" data-aos="fade-up" data-aos-delay="500"
                         data-title="Landing Page Restoran Nusantara" data-category="UI/UX Web Design"
                         data-image="img/website_satu.png"
                         data-desc="Desain antarmuka landing page premium untuk restoran Shaqueena yang menyajikan masakan khas Nusantara. Mengusung visual elegan, navigasi menu (Sate, Bakso, Soto) yang tertata rapi, dan tombol panggil tindakan (Call to Action) yang menarik perhatian pelanggan.">
@@ -245,7 +283,7 @@
                         </div>
                     </div>
 
-                    <div class="pf-card" data-aos="fade-up" data-aos-delay="400"
+                    <div class="pf-card" data-aos="fade-up" data-aos-delay="600"
                         data-title="Website Pameran Mobil Premium" data-category="Automotive Website"
                         data-image="img/website_dua.png"
                         data-desc="Platform dealer mobil Velocity Motors. Menggunakan tampilan mode gelap premium dengan tata letak minimalis dan eksklusif untuk menonjolkan kendaraan bergaya supercar. Dilengkapi dengan fasilitas ulasan video dan sistem pemesanan Test Drive.">
@@ -256,18 +294,7 @@
                         </div>
                     </div>
 
-                    <div class="pf-card" data-aos="fade-up" data-aos-delay="500"
-                        data-title="Sistem Layanan Pengaduan Sekolah" data-category="Sistem Informasi Publik"
-                        data-image="img/website_tiga.png"
-                        data-desc="Sistem Pengaduan dan Aspirasi untuk SMKN 1 Bondowoso. Dirancang dengan elemen antarmuka yang bersih (clean UI), lengkap dengan ilustrasi modern. Sistem ini memudahkan partisipasi aktif siswa maupun masyarakat untuk menyampaikan laporan secara transparan.">
-                        <div class="pf-img"><img src="img/website_tiga.png" alt="Pengaduan SMKN 1 Bondowoso"></div>
-                        <div class="pf-info">
-                            <div class="pf-category">Sistem Informasi Publik</div>
-                            <h3>Sistem Pengaduan SMKN 1 Bondowoso</h3>
-                        </div>
-                    </div>
-
-                    <div class="pf-card" data-aos="fade-up" data-aos-delay="600"
+                    <div class="pf-card" data-aos="fade-up" data-aos-delay="700"
                         data-title="Aplikasi Pemesanan Makanan Sehat" data-category="Food Delivery Platform"
                         data-image="img/website_empat.png"
                         data-desc="Desain aplikasi web pengiriman makanan segar premium. Mengoptimalkan palet warna cerah namun menenangkan demi menyorot sajian makanan bergizi. Memiliki navigasi kategori yang gampang diakses serta menu cari berfitur lengkap (lengkap dengan penanda popularitas & waktu pengantaran).">
@@ -275,6 +302,17 @@
                         <div class="pf-info">
                             <div class="pf-category">Food Delivery Platform</div>
                             <h3>Aplikasi Pemesanan Makanan Sehat</h3>
+                        </div>
+                    </div>
+
+                    <div class="pf-card" data-aos="fade-up" data-aos-delay="800"
+                        data-title="Portal Komunikasi Guru & Wali Murid" data-category="Sistem Pendidikan"
+                        data-image="img/guru-wali.png"
+                        data-desc="Platform web khusus untuk menjembatani komunikasi edukasional antara pihak sekolah dengan wali murid. Dilengkapi dengan sistem pemantauan laporan akademik, kehadiran, serta rekam nilai secara transparan dalam antarmuka yang ramah pengguna.">
+                        <div class="pf-img"><img src="img/guru-wali.png" alt="Aplikasi Guru dan Wali Murid"></div>
+                        <div class="pf-info">
+                            <div class="pf-category">Sistem Pendidikan</div>
+                            <h3>Portal Komunikasi Guru & Wali Murid</h3>
                         </div>
                     </div>
                 </div>
@@ -292,7 +330,8 @@
             </div>
             <div class="container services-grid" style="margin-top:40px;">
                 <div class="service-box" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="sv-icon">💻</div>
+                    <div class="sv-icon"><img src="img/laptop.png" alt="Pengembangan Antarmuka Web"
+                            style="width: 45px; height: 45px; object-fit: contain;"></div>
                     <h3>Pengembangan Antarmuka Web</h3>
                     <p>Membuat struktur dan gaya visual situs (HTML, CSS, modern JS) layaknya sulap yang indah namun
                         tetap
@@ -300,24 +339,27 @@
                     <a href="#" class="read-more">Baca Selengkapnya ➔</a>
                 </div>
                 <div class="service-box" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="sv-icon">📱</div>
+                    <div class="sv-icon"><img src="img/mobile.png" alt="Desain UI/UX Seluler"
+                            style="width: 45px; height: 45px; object-fit: contain;"></div>
                     <h3>Desain UI/UX Seluler (Flutter)</h3>
                     <p>Merancang layar aplikasi berkinerja tinggi, fungsionalitas intuitif, untuk perangkat seluler yang
                         menarget kemudahan bertransaksi pelanggan.</p>
                     <a href="#" class="read-more">Baca Selengkapnya ➔</a>
                 </div>
                 <div class="service-box" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="sv-icon">⚙️</div>
+                    <div class="sv-icon"><img src="img/api.png" alt="Integrasi API"
+                            style="width: 45px; height: 45px; object-fit: contain;"></div>
                     <h3>Integrasi Front App (API)</h3>
                     <p>Memastikan bahwa data fungsional dari Back-End atau API Cuaca dapat merespon ke desain secara
                         dinamis
-                        (*real-time processing*).</p>
+                        (real-time processing).</p>
                     <a href="#" class="read-more">Baca Selengkapnya ➔</a>
                 </div>
                 <div class="service-box" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="sv-icon">🔤</div>
+                    <div class="sv-icon"><img src="img/design.png" alt="Tipografi dan Design System"
+                            style="width: 45px; height: 45px; object-fit: contain;"></div>
                     <h3>Tipografi & Design System</h3>
-                    <p>Pemilihan warna (*Palette*), penyelarasan *layout grid*, dan hierarki visual agar web tampil
+                    <p>Pemilihan warna (Palette), penyelarasan layout grid, dan hierarki visual agar web tampil
                         dengan
                         sangat estetik tak bersela.</p>
                     <a href="#" class="read-more">Baca Selengkapnya ➔</a>
@@ -339,29 +381,29 @@
                 <div class="skills-grid">
                     <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
                         <div class="skill-icon">
-                            <img src="img/html_logo.png" alt="HTML5"
-                                style="width: 80px; height: 80px; object-fit: contain;">
+                            <i class="devicon-html5-plain colored"
+                                style="font-size: 80px; display: inline-flex; align-items: center; justify-content: center;"></i>
                         </div>
                         <span>HTML5</span>
                     </div>
                     <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
                         <div class="skill-icon">
-                            <img src="img/css_logo.png" alt="CSS3"
-                                style="width: 80px; height: 80px; object-fit: contain;">
+                            <i class="devicon-css3-plain colored"
+                                style="font-size: 80px; display: inline-flex; align-items: center; justify-content: center;"></i>
                         </div>
                         <span>CSS3</span>
                     </div>
                     <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
                         <div class="skill-icon">
-                            <img src="img/flutter_logo.png" alt="Flutter"
-                                style="width: 80px; height: 80px; object-fit: contain;">
+                            <i class="devicon-flutter-plain colored"
+                                style="font-size: 80px; display: inline-flex; align-items: center; justify-content: center;"></i>
                         </div>
                         <span>Flutter</span>
                     </div>
                     <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
                         <div class="skill-icon">
-                            <img src="img/dart_logo.png" alt="Dart"
-                                style="width: 80px; height: 80px; object-fit: contain;">
+                            <i class="devicon-dart-plain colored"
+                                style="font-size: 80px; display: inline-flex; align-items: center; justify-content: center;"></i>
                         </div>
                         <span>Dart</span>
                     </div>
@@ -407,56 +449,64 @@
             </div>
 
             <div class="certs-grid">
-                <!-- Envelope 1 -->
-                <div class="cert-item" data-aos="zoom-in" data-aos-delay="100"
+                <!-- Cert 1 -->
+                <div class="cert-card-wow" data-aos="zoom-in" data-aos-delay="100"
                     onclick="openCertModal('img/sertifikat_satu.jpg')">
-                    <div class="cert-envelope-container">
-                        <div class="cert-envelope-flap"></div>
-                        <div class="cert-envelope-letter">
-                            <img src="img/sertifikat_satu.jpg" alt="Peserta Terbaik Pelatihan TIK">
+                    <div class="cert-image-box">
+                        <img src="img/sertifikat_satu.jpg" alt="Peserta Terbaik Pelatihan TIK">
+                        <div class="cert-overlay">
+                            <span class="view-text">Lihat Bukti</span>
                         </div>
-                        <div class="cert-envelope-front"></div>
                     </div>
-                    <div class="cert-title">Peserta Terbaik Pelatihan TIK Jatim</div>
+                    <div class="cert-content-wow">
+                        <div class="cert-badge">Penghargaan</div>
+                        <h3 class="cert-title-wow">Peserta Terbaik Pelatihan TIK Jatim</h3>
+                    </div>
                 </div>
 
-                <!-- Envelope 2 -->
-                <div class="cert-item" data-aos="zoom-in" data-aos-delay="200"
+                <!-- Cert 2 -->
+                <div class="cert-card-wow" data-aos="zoom-in" data-aos-delay="200"
                     onclick="openCertModal('img/sertifikat_dua.jpg')">
-                    <div class="cert-envelope-container">
-                        <div class="cert-envelope-flap"></div>
-                        <div class="cert-envelope-letter">
-                            <img src="img/sertifikat_dua.jpg" alt="Peserta Pelatihan TIK Jatim">
+                    <div class="cert-image-box">
+                        <img src="img/sertifikat_dua.jpg" alt="Peserta Pelatihan TIK Jatim">
+                        <div class="cert-overlay">
+                            <span class="view-text">Lihat Bukti</span>
                         </div>
-                        <div class="cert-envelope-front"></div>
                     </div>
-                    <div class="cert-title">Peserta Pelatihan TIK Jatim 2025</div>
+                    <div class="cert-content-wow">
+                        <div class="cert-badge">Sertifikasi</div>
+                        <h3 class="cert-title-wow">Peserta Pelatihan TIK Jatim 2025</h3>
+                    </div>
                 </div>
 
-                <!-- Envelope 3 -->
-                <div class="cert-item" data-aos="zoom-in" data-aos-delay="300"
+                <!-- Cert 3 -->
+                <div class="cert-card-wow" data-aos="zoom-in" data-aos-delay="300"
                     onclick="openCertModal('img/sertifikat_tiga.jpg')">
-                    <div class="cert-envelope-container">
-                        <div class="cert-envelope-flap"></div>
-                        <div class="cert-envelope-letter">
-                            <img src="img/sertifikat_tiga.jpg" alt="Lomba Mahavation Polda Jatim">
+                    <div class="cert-image-box">
+                        <img src="img/sertifikat_tiga.jpg" alt="Lomba Mahavation Polda Jatim">
+                        <div class="cert-overlay">
+                            <span class="view-text">Lihat Bukti</span>
                         </div>
-                        <div class="cert-envelope-front"></div>
                     </div>
-                    <div class="cert-title">Lomba Mahavation Polda Jatim</div>
+                    <div class="cert-content-wow">
+                        <div class="cert-badge">Kompetisi</div>
+                        <h3 class="cert-title-wow">Lomba Mahavation Polda Jatim</h3>
+                    </div>
                 </div>
 
-                <!-- Envelope 4 -->
-                <div class="cert-item" data-aos="zoom-in" data-aos-delay="400"
+                <!-- Cert 4 -->
+                <div class="cert-card-wow" data-aos="zoom-in" data-aos-delay="400"
                     onclick="openCertModal('img/sertifikat_lima.jpg')">
-                    <div class="cert-envelope-container">
-                        <div class="cert-envelope-flap"></div>
-                        <div class="cert-envelope-letter">
-                            <img src="img/sertifikat_lima.jpg" alt="Samsung Innovation Campus">
+                    <div class="cert-image-box">
+                        <img src="img/sertifikat_lima.jpg" alt="Samsung Innovation Campus">
+                        <div class="cert-overlay">
+                            <span class="view-text">Lihat Bukti</span>
                         </div>
-                        <div class="cert-envelope-front"></div>
                     </div>
-                    <div class="cert-title">Samsung Innovation Campus</div>
+                    <div class="cert-content-wow">
+                        <div class="cert-badge">Kelulusan</div>
+                        <h3 class="cert-title-wow">Samsung Innovation Campus</h3>
+                    </div>
                 </div>
             </div>
         </section>
@@ -530,7 +580,7 @@
                 <div>
                     <h4>Kontak Langsung</h4>
                     <ul class="footer-links" style="opacity:0.8;">
-                        <li style="margin-bottom:8px;">MohammadRafikhulArdiansyah@gmail.com</li>
+                        <li style="margin-bottom:8px;">mohammadrafikhulardiansyah@gmail.com</li>
                         <li style="margin-bottom:8px;">+62 85 147 191 733</li>
                         <li>Jawa Timur, Indonesia</li>
                     </ul>
@@ -543,7 +593,8 @@
                     <h2>Tertarik untuk berkolaborasi?</h2>
                     <p>Mari diskusikan solusi teknologi terbaik untuk mewujudkan ide Anda menjadi nyata.</p>
                 </div>
-                <a href="mailto:username@email.com" class="btn btn-footer-email">Kirim Email Sekarang</a>
+                <a href="mailto:mohammadrafikhulardiansyah@gmail.com" class="btn btn-footer-email">Kirim Email
+                    Sekarang</a>
             </div>
         </footer>
 
@@ -683,15 +734,6 @@
             const themeToggle = document.getElementById('theme-toggle');
             const htmlElement = document.documentElement;
 
-            const savedTheme = localStorage.getItem('theme');
-            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-            if (savedTheme) {
-                htmlElement.setAttribute('data-theme', savedTheme);
-            } else if (prefersDark) {
-                htmlElement.setAttribute('data-theme', 'dark');
-            }
-
             themeToggle.addEventListener('click', () => {
                 const currentTheme = htmlElement.getAttribute('data-theme');
                 const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
@@ -762,7 +804,8 @@
                         if (this.y < -10) this.reset();
                     }
                     draw() {
-                        ctx.fillStyle = `rgba(91, 75, 219, ${this.opacity})`;
+                        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+                        ctx.fillStyle = isDark ? `rgba(0, 242, 255, ${this.opacity})` : `rgba(79, 70, 229, ${this.opacity})`;
                         ctx.beginPath();
                         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
                         ctx.fill();
@@ -790,7 +833,6 @@
                 setTimeout(() => {
                     loaderContent.style.transform = 'scale(0.95)';
                     loaderContent.style.opacity = '0';
-                    loaderWrapper.style.backgroundColor = '#FFFFFF';
 
                     setTimeout(() => {
                         loaderWrapper.style.opacity = '0';
