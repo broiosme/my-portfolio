@@ -389,10 +389,14 @@ i,
 /* HERO SECTION */
 .hero {
     position: relative;
-    padding: var(--section-p) 0;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: var(--section-p) 1.5rem;
+    min-height: calc(100vh - 76px);
     background:
-        radial-gradient(800px circle at right top, rgba(79, 70, 229, 0.08), transparent),
-        radial-gradient(800px circle at left bottom, rgba(59, 130, 246, 0.05), transparent);
+        radial-gradient(1000px circle at right top, rgba(79, 70, 229, 0.15), transparent),
+        radial-gradient(1000px circle at left bottom, rgba(59, 130, 246, 0.1), transparent);
     overflow: hidden;
 }
 
